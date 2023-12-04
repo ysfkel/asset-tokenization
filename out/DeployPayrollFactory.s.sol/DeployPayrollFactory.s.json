@@ -1,0 +1,345 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "script/DeployPayrollFactory.s.sol",
+    "id": 49013,
+    "exportedSymbols": {
+      "Address": [
+        48748
+      ],
+      "Context": [
+        48770
+      ],
+      "IPayrollFactory": [
+        52607
+      ],
+      "Ownable": [
+        47843
+      ],
+      "Payroll": [
+        52161
+      ],
+      "PayrollFactory": [
+        52416
+      ],
+      "PayrollProxy": [
+        52455
+      ],
+      "deployPayrollFactory": [
+        49012
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:256:54",
+    "nodes": [
+      {
+        "id": 48989,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:54",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 48990,
+        "nodeType": "ImportDirective",
+        "src": "65:43:54",
+        "nodes": [],
+        "absolutePath": "src/payroll/PayrollFactory.sol",
+        "file": "../src/payroll/PayrollFactory.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 49013,
+        "sourceUnit": 52417,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 49012,
+        "nodeType": "FunctionDefinition",
+        "src": "110:184:54",
+        "nodes": [],
+        "body": {
+          "id": 49011,
+          "nodeType": "Block",
+          "src": "196:98:54",
+          "nodes": [],
+          "statements": [
+            {
+              "assignments": [
+                48999
+              ],
+              "declarations": [
+                {
+                  "constant": false,
+                  "id": 48999,
+                  "mutability": "mutable",
+                  "name": "_factory",
+                  "nameLocation": "217:8:54",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49011,
+                  "src": "202:23:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_PayrollFactory_$52416",
+                    "typeString": "contract PayrollFactory"
+                  },
+                  "typeName": {
+                    "id": 48998,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48997,
+                      "name": "PayrollFactory",
+                      "nameLocations": [
+                        "202:14:54"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 52416,
+                      "src": "202:14:54"
+                    },
+                    "referencedDeclaration": 52416,
+                    "src": "202:14:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_PayrollFactory_$52416",
+                      "typeString": "contract PayrollFactory"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "id": 49005,
+              "initialValue": {
+                "arguments": [
+                  {
+                    "id": 49003,
+                    "name": "beaconAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 48992,
+                    "src": "247:13:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  ],
+                  "id": 49002,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "NewExpression",
+                  "src": "228:18:54",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_PayrollFactory_$52416_$",
+                    "typeString": "function (address) returns (contract PayrollFactory)"
+                  },
+                  "typeName": {
+                    "id": 49001,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 49000,
+                      "name": "PayrollFactory",
+                      "nameLocations": [
+                        "232:14:54"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 52416,
+                      "src": "232:14:54"
+                    },
+                    "referencedDeclaration": 52416,
+                    "src": "232:14:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_PayrollFactory_$52416",
+                      "typeString": "contract PayrollFactory"
+                    }
+                  }
+                },
+                "id": 49004,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "functionCall",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "228:33:54",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_PayrollFactory_$52416",
+                  "typeString": "contract PayrollFactory"
+                }
+              },
+              "nodeType": "VariableDeclarationStatement",
+              "src": "202:59:54"
+            },
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "id": 49008,
+                    "name": "_factory",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 48999,
+                    "src": "282:8:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_PayrollFactory_$52416",
+                      "typeString": "contract PayrollFactory"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_contract$_PayrollFactory_$52416",
+                      "typeString": "contract PayrollFactory"
+                    }
+                  ],
+                  "id": 49007,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "nodeType": "ElementaryTypeNameExpression",
+                  "src": "274:7:54",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_address_$",
+                    "typeString": "type(address)"
+                  },
+                  "typeName": {
+                    "id": 49006,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "274:7:54",
+                    "typeDescriptions": {}
+                  }
+                },
+                "id": 49009,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "typeConversion",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "274:17:54",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "functionReturnParameters": 48996,
+              "id": 49010,
+              "nodeType": "Return",
+              "src": "267:24:54"
+            }
+          ]
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "deployPayrollFactory",
+        "nameLocation": "119:20:54",
+        "parameters": {
+          "id": 48993,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 48992,
+              "mutability": "mutable",
+              "name": "beaconAddress",
+              "nameLocation": "148:13:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 49012,
+              "src": "140:21:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 48991,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "140:7:54",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "139:23:54"
+        },
+        "returnParameters": {
+          "id": 48996,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 48995,
+              "mutability": "mutable",
+              "name": "factoryAddress",
+              "nameLocation": "180:14:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 49012,
+              "src": "172:22:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 48994,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "172:7:54",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "171:24:54"
+        },
+        "scope": 49013,
+        "stateMutability": "nonpayable",
+        "virtual": false,
+        "visibility": "internal"
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 54
+}

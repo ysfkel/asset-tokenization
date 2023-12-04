@@ -1,0 +1,4 @@
+./cache
+.env 
+./out 
+./todo.md

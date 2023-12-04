@@ -1,0 +1,2630 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "assetExists",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "assetIds",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "batchTransferFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "contentIds",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "consume",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAssetContent",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "contentId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAssetContentAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "contentId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAssetContentIndex",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "contentId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAssetContentIndexWithRevert",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAssetExternalContentRef",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getContentCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "isAssetOwner",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "name",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "symbol",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "contentIds",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "externalContentRef",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "contentIds",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "reduceContentAmounts",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "assetExists(uint256)": "518e2bdd",
+    "batchTransferFrom(address,uint256[],uint256[],bytes)": "6896893b",
+    "consume(uint256,uint256[],uint256[],bytes)": "efec6a09",
+    "getAssetContent(uint256)": "390027b3",
+    "getAssetContentAmount(uint256,uint256)": "5e6d43ef",
+    "getAssetContentIndex(uint256,uint256)": "c5290d28",
+    "getAssetContentIndexWithRevert(uint256,uint256)": "51a5ec34",
+    "getAssetExternalContentRef(uint256)": "57ac4b54",
+    "getContentCount(uint256)": "1f54a327",
+    "isAssetOwner(uint256,address)": "473d6ea0",
+    "mint(uint256,bytes32,bytes32,uint256[],uint256[],bytes32,bytes)": "98ddcd2e",
+    "reduceContentAmounts(uint256,uint256[],uint256[],bytes)": "96e7e67f",
+    "transfer(address,uint256,uint256,bytes)": "dabd76e9"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"}],\"name\":\"assetExists\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"assetIds\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"batchTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"},{\"internalType\":\"uint256[]\",\"name\":\"contentIds\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"consume\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"}],\"name\":\"getAssetContent\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"contentId\",\"type\":\"uint256\"}],\"name\":\"getAssetContentAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"contentId\",\"type\":\"uint256\"}],\"name\":\"getAssetContentIndex\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"contentId\",\"type\":\"uint256\"}],\"name\":\"getAssetContentIndexWithRevert\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"}],\"name\":\"getAssetExternalContentRef\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"}],\"name\":\"getContentCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isAssetOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"symbol\",\"type\":\"bytes32\"},{\"internalType\":\"uint256[]\",\"name\":\"contentIds\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes32\",\"name\":\"externalContentRef\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"},{\"internalType\":\"uint256[]\",\"name\":\"contentIds\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"reduceContentAmounts\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"transfer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Yusuf\",\"kind\":\"dev\",\"methods\":{\"assetExists(uint256)\":{\"params\":{\"assetId\":\"assetId to check\"}},\"batchTransferFrom(address,uint256[],uint256[],bytes)\":{\"params\":{\"amounts\":\"amounts of assets to transfer\",\"assetIds\":\"assets to transfer\",\"data\":\"refer - ERC1155 _mint\",\"to\":\"receiver address\"}},\"consume(uint256,uint256[],uint256[],bytes)\":{\"params\":{\"amounts\":\"amounts of contentIds\",\"assetId\":\"Id of asset to add contents to\",\"contentIds\":\"Id's of assets which will be consumed\",\"data\":\"- refer - ERC1155 _mint\"}},\"getAssetContent(uint256)\":{\"details\":\"contents are assetIds whhich where consumed to mint assetId\",\"params\":{\"assetId\":\"AssetId to retrive its contents\"},\"returns\":{\"_0\":\"returns contents of assetId\"}},\"getAssetContentAmount(uint256,uint256)\":{\"params\":{\"assetId\":\"assetid\",\"contentId\":\"contentid\"},\"returns\":{\"_0\":\"returns the amount of contentId\"}},\"getAssetContentIndex(uint256,uint256)\":{\"params\":{\"assetId\":\"assetId\",\"contentId\":\"contentid\"},\"returns\":{\"index\":\"the consumed content index\"}},\"getAssetContentIndexWithRevert(uint256,uint256)\":{\"params\":{\"assetId\":\"assetId\",\"contentId\":\"contentid\"},\"returns\":{\"index\":\"the consumed content index\"}},\"getAssetExternalContentRef(uint256)\":{\"params\":{\"assetId\":\"assetId\"},\"returns\":{\"_0\":\"returns the unique file storage identifier of the assets contents if available\"}},\"getContentCount(uint256)\":{\"params\":{\"assetId\":\"asset id\"}},\"isAssetOwner(uint256,address)\":{\"params\":{\"account\":\"account to check\",\"assetId\":\"assetId to check\"}},\"mint(uint256,bytes32,bytes32,uint256[],uint256[],bytes32,bytes)\":{\"details\":\"contentIds are previously minted assets which are consumed to mint new asset each contentId must have its amount in amounts\",\"params\":{\"amount\":\"Amount of asset to mint\",\"amounts\":\"amounts of contentIds to consume\",\"contentIds\":\"assets to consume / lock inorder to mint new asset\",\"data\":\"refer - ERC1155 _mint\",\"externalContentRef\":\"(optional) unique file storage id of the file (eg json) that stores the contents of the asset\",\"name\":\"Name of asset\",\"symbol\":\"Asset symbol\"}},\"reduceContentAmounts(uint256,uint256[],uint256[],bytes)\":{\"params\":{\"amounts\":\"amounts of contentIds\",\"assetId\":\"existing assetId to reduce its consumed contentIds\",\"contentIds\":\"contentIds whose amounts to be reduced\",\"data\":\"refer - ERC1155 _mint\"}},\"transfer(address,uint256,uint256,bytes)\":{\"params\":{\"amount\":\"Amount to transfer\",\"data\":\"refer - ERC1155 _mint\",\"id\":\"Id of asset to transfer\",\"to\":\"receiver address\"}}},\"title\":\"IAssetController\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"assetExists(uint256)\":{\"notice\":\"checks if assetId exists in memory\"},\"batchTransferFrom(address,uint256[],uint256[],bytes)\":{\"notice\":\"batch transfer from sender to receiver `to` address\"},\"consume(uint256,uint256[],uint256[],bytes)\":{\"notice\":\"consumes contents to assetId\"},\"getAssetContentIndex(uint256,uint256)\":{\"notice\":\"returns the index of the content\"},\"getAssetContentIndexWithRevert(uint256,uint256)\":{\"notice\":\"returns the index of the content. Reverts if the contentId is not a content of the asset\"},\"getContentCount(uint256)\":{\"notice\":\"returns count of the content of the asset\"},\"isAssetOwner(uint256,address)\":{\"notice\":\"checks if account owns (is minter) of assetId\"},\"mint(uint256,bytes32,bytes32,uint256[],uint256[],bytes32,bytes)\":{\"notice\":\"mints new asset\"},\"reduceContentAmounts(uint256,uint256[],uint256[],bytes)\":{\"notice\":\"Reduces the amount of consumed assets (contentIds) used to mint the specified assetId\"},\"transfer(address,uint256,uint256,bytes)\":{\"notice\":\"transfers assets from sender to `to` address\"}},\"notice\":\"Defines interface for asset mint and consume functionlaity.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/asset/interfaces/IAssetController.sol\":\"IAssetController\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/\"]},\"sources\":{\"src/asset/interfaces/IAssetController.sol\":{\"keccak256\":\"0x3702d1c29eafe93627d5b920df8fdfb1074369fd842e53c9cc3386be00e67975\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://ca42ba41761a6fa65c697dd558a36c8383fb1337b4489faef08fd1c168b0b2bb\",\"dweb:/ipfs/QmVQAKyPHWFLjGQNd4MpHGAYAuh76GNrHeaGERjPzU1KmU\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "assetId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "assetExists",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "assetIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "amounts",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "batchTransferFrom"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "assetId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "contentIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "amounts",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "consume"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "assetId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAssetContent",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "assetId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "contentId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAssetContentAmount",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "assetId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "contentId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAssetContentIndex",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "assetId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "contentId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAssetContentIndexWithRevert",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "assetId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAssetExternalContentRef",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "assetId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getContentCount",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "assetId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isAssetOwner",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "name",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "symbol",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "contentIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "amounts",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "externalContentRef",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "mint"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "assetId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "contentIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "amounts",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "reduceContentAmounts"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transfer"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "assetExists(uint256)": {
+            "params": {
+              "assetId": "assetId to check"
+            }
+          },
+          "batchTransferFrom(address,uint256[],uint256[],bytes)": {
+            "params": {
+              "amounts": "amounts of assets to transfer",
+              "assetIds": "assets to transfer",
+              "data": "refer - ERC1155 _mint",
+              "to": "receiver address"
+            }
+          },
+          "consume(uint256,uint256[],uint256[],bytes)": {
+            "params": {
+              "amounts": "amounts of contentIds",
+              "assetId": "Id of asset to add contents to",
+              "contentIds": "Id's of assets which will be consumed",
+              "data": "- refer - ERC1155 _mint"
+            }
+          },
+          "getAssetContent(uint256)": {
+            "details": "contents are assetIds whhich where consumed to mint assetId",
+            "params": {
+              "assetId": "AssetId to retrive its contents"
+            },
+            "returns": {
+              "_0": "returns contents of assetId"
+            }
+          },
+          "getAssetContentAmount(uint256,uint256)": {
+            "params": {
+              "assetId": "assetid",
+              "contentId": "contentid"
+            },
+            "returns": {
+              "_0": "returns the amount of contentId"
+            }
+          },
+          "getAssetContentIndex(uint256,uint256)": {
+            "params": {
+              "assetId": "assetId",
+              "contentId": "contentid"
+            },
+            "returns": {
+              "index": "the consumed content index"
+            }
+          },
+          "getAssetContentIndexWithRevert(uint256,uint256)": {
+            "params": {
+              "assetId": "assetId",
+              "contentId": "contentid"
+            },
+            "returns": {
+              "index": "the consumed content index"
+            }
+          },
+          "getAssetExternalContentRef(uint256)": {
+            "params": {
+              "assetId": "assetId"
+            },
+            "returns": {
+              "_0": "returns the unique file storage identifier of the assets contents if available"
+            }
+          },
+          "getContentCount(uint256)": {
+            "params": {
+              "assetId": "asset id"
+            }
+          },
+          "isAssetOwner(uint256,address)": {
+            "params": {
+              "account": "account to check",
+              "assetId": "assetId to check"
+            }
+          },
+          "mint(uint256,bytes32,bytes32,uint256[],uint256[],bytes32,bytes)": {
+            "details": "contentIds are previously minted assets which are consumed to mint new asset each contentId must have its amount in amounts",
+            "params": {
+              "amount": "Amount of asset to mint",
+              "amounts": "amounts of contentIds to consume",
+              "contentIds": "assets to consume / lock inorder to mint new asset",
+              "data": "refer - ERC1155 _mint",
+              "externalContentRef": "(optional) unique file storage id of the file (eg json) that stores the contents of the asset",
+              "name": "Name of asset",
+              "symbol": "Asset symbol"
+            }
+          },
+          "reduceContentAmounts(uint256,uint256[],uint256[],bytes)": {
+            "params": {
+              "amounts": "amounts of contentIds",
+              "assetId": "existing assetId to reduce its consumed contentIds",
+              "contentIds": "contentIds whose amounts to be reduced",
+              "data": "refer - ERC1155 _mint"
+            }
+          },
+          "transfer(address,uint256,uint256,bytes)": {
+            "params": {
+              "amount": "Amount to transfer",
+              "data": "refer - ERC1155 _mint",
+              "id": "Id of asset to transfer",
+              "to": "receiver address"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "assetExists(uint256)": {
+            "notice": "checks if assetId exists in memory"
+          },
+          "batchTransferFrom(address,uint256[],uint256[],bytes)": {
+            "notice": "batch transfer from sender to receiver `to` address"
+          },
+          "consume(uint256,uint256[],uint256[],bytes)": {
+            "notice": "consumes contents to assetId"
+          },
+          "getAssetContentIndex(uint256,uint256)": {
+            "notice": "returns the index of the content"
+          },
+          "getAssetContentIndexWithRevert(uint256,uint256)": {
+            "notice": "returns the index of the content. Reverts if the contentId is not a content of the asset"
+          },
+          "getContentCount(uint256)": {
+            "notice": "returns count of the content of the asset"
+          },
+          "isAssetOwner(uint256,address)": {
+            "notice": "checks if account owns (is minter) of assetId"
+          },
+          "mint(uint256,bytes32,bytes32,uint256[],uint256[],bytes32,bytes)": {
+            "notice": "mints new asset"
+          },
+          "reduceContentAmounts(uint256,uint256[],uint256[],bytes)": {
+            "notice": "Reduces the amount of consumed assets (contentIds) used to mint the specified assetId"
+          },
+          "transfer(address,uint256,uint256,bytes)": {
+            "notice": "transfers assets from sender to `to` address"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/asset/interfaces/IAssetController.sol": "IAssetController"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/asset/interfaces/IAssetController.sol": {
+        "keccak256": "0x3702d1c29eafe93627d5b920df8fdfb1074369fd842e53c9cc3386be00e67975",
+        "urls": [
+          "bzz-raw://ca42ba41761a6fa65c697dd558a36c8383fb1337b4489faef08fd1c168b0b2bb",
+          "dweb:/ipfs/QmVQAKyPHWFLjGQNd4MpHGAYAuh76GNrHeaGERjPzU1KmU"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/asset/interfaces/IAssetController.sol",
+    "id": 49643,
+    "exportedSymbols": {
+      "IAssetController": [
+        49642
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "130:4655:52",
+    "nodes": [
+      {
+        "id": 49493,
+        "nodeType": "PragmaDirective",
+        "src": "130:24:52",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 49642,
+        "nodeType": "ContractDefinition",
+        "src": "282:4502:52",
+        "nodes": [
+          {
+            "id": 49514,
+            "nodeType": "FunctionDefinition",
+            "src": "923:237:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49495,
+              "nodeType": "StructuredDocumentation",
+              "src": "315:603:52",
+              "text": " @notice mints new asset\n @param amount Amount of asset to mint\n @param name Name of asset\n @param symbol Asset symbol\n @param contentIds assets to consume / lock inorder to mint new asset\n @param amounts amounts of contentIds to consume\n @param externalContentRef (optional) unique file storage id of the file (eg json) that stores the contents of the asset\n @param data refer - ERC1155 _mint\n @dev contentIds are previously minted assets which are consumed to mint new asset\n each contentId must have its amount in amounts"
+            },
+            "functionSelector": "98ddcd2e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nameLocation": "932:4:52",
+            "parameters": {
+              "id": 49512,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49497,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "954:6:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49514,
+                  "src": "946:14:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49496,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "946:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49499,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "978:4:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49514,
+                  "src": "970:12:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 49498,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "970:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49501,
+                  "mutability": "mutable",
+                  "name": "symbol",
+                  "nameLocation": "1000:6:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49514,
+                  "src": "992:14:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 49500,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "992:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49504,
+                  "mutability": "mutable",
+                  "name": "contentIds",
+                  "nameLocation": "1035:10:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49514,
+                  "src": "1016:29:52",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 49502,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1016:7:52",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 49503,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1016:9:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49507,
+                  "mutability": "mutable",
+                  "name": "amounts",
+                  "nameLocation": "1074:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49514,
+                  "src": "1055:26:52",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 49505,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1055:7:52",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 49506,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1055:9:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49509,
+                  "mutability": "mutable",
+                  "name": "externalContentRef",
+                  "nameLocation": "1099:18:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49514,
+                  "src": "1091:26:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 49508,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1091:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49511,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "1140:4:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49514,
+                  "src": "1127:17:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 49510,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1127:5:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "936:214:52"
+            },
+            "returnParameters": {
+              "id": 49513,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1159:0:52"
+            },
+            "scope": 49642,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49528,
+            "nodeType": "FunctionDefinition",
+            "src": "1429:125:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49515,
+              "nodeType": "StructuredDocumentation",
+              "src": "1166:258:52",
+              "text": " @notice consumes contents to assetId\n @param assetId Id of asset to add contents to\n @param contentIds Id's of assets which will be consumed\n @param amounts amounts of contentIds\n @param data - refer - ERC1155 _mint"
+            },
+            "functionSelector": "efec6a09",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "consume",
+            "nameLocation": "1438:7:52",
+            "parameters": {
+              "id": 49526,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49517,
+                  "mutability": "mutable",
+                  "name": "assetId",
+                  "nameLocation": "1454:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49528,
+                  "src": "1446:15:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49516,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1446:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49520,
+                  "mutability": "mutable",
+                  "name": "contentIds",
+                  "nameLocation": "1480:10:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49528,
+                  "src": "1463:27:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 49518,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1463:7:52",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 49519,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1463:9:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49523,
+                  "mutability": "mutable",
+                  "name": "amounts",
+                  "nameLocation": "1509:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49528,
+                  "src": "1492:24:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 49521,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1492:7:52",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 49522,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1492:9:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49525,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "1531:4:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49528,
+                  "src": "1518:17:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 49524,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1518:5:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1445:91:52"
+            },
+            "returnParameters": {
+              "id": 49527,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1553:0:52"
+            },
+            "scope": 49642,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49542,
+            "nodeType": "FunctionDefinition",
+            "src": "1900:168:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49529,
+              "nodeType": "StructuredDocumentation",
+              "src": "1560:335:52",
+              "text": " @notice Reduces the amount of consumed assets (contentIds) used to mint the specified assetId\n @param assetId existing assetId to reduce its consumed contentIds\n @param contentIds contentIds whose amounts to be reduced\n @param amounts amounts of contentIds\n @param data  refer - ERC1155 _mint"
+            },
+            "functionSelector": "96e7e67f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "reduceContentAmounts",
+            "nameLocation": "1909:20:52",
+            "parameters": {
+              "id": 49540,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49531,
+                  "mutability": "mutable",
+                  "name": "assetId",
+                  "nameLocation": "1947:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49542,
+                  "src": "1939:15:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49530,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1939:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49534,
+                  "mutability": "mutable",
+                  "name": "contentIds",
+                  "nameLocation": "1981:10:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49542,
+                  "src": "1964:27:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 49532,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1964:7:52",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 49533,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1964:9:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49537,
+                  "mutability": "mutable",
+                  "name": "amounts",
+                  "nameLocation": "2018:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49542,
+                  "src": "2001:24:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 49535,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "2001:7:52",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 49536,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2001:9:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49539,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "2048:4:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49542,
+                  "src": "2035:17:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 49538,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2035:5:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1929:129:52"
+            },
+            "returnParameters": {
+              "id": 49541,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2067:0:52"
+            },
+            "scope": 49642,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49554,
+            "nodeType": "FunctionDefinition",
+            "src": "2306:86:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49543,
+              "nodeType": "StructuredDocumentation",
+              "src": "2074:227:52",
+              "text": " @notice transfers assets from sender to `to` address\n @param to receiver address\n @param id Id of asset to transfer\n @param amount Amount to transfer\n @param data refer - ERC1155 _mint"
+            },
+            "functionSelector": "dabd76e9",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transfer",
+            "nameLocation": "2315:8:52",
+            "parameters": {
+              "id": 49552,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49545,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "2332:2:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49554,
+                  "src": "2324:10:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 49544,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2324:7:52",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49547,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "2344:2:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49554,
+                  "src": "2336:10:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49546,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2336:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49549,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "2356:6:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49554,
+                  "src": "2348:14:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49548,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2348:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49551,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "2377:4:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49554,
+                  "src": "2364:17:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 49550,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2364:5:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2323:59:52"
+            },
+            "returnParameters": {
+              "id": 49553,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2391:0:52"
+            },
+            "scope": 49642,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49568,
+            "nodeType": "FunctionDefinition",
+            "src": "2650:128:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49555,
+              "nodeType": "StructuredDocumentation",
+              "src": "2398:247:52",
+              "text": " @notice batch transfer from sender to receiver `to` address\n @param to receiver address\n @param assetIds assets to transfer\n @param amounts amounts of assets to transfer\n @param data refer - ERC1155 _mint"
+            },
+            "functionSelector": "6896893b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "batchTransferFrom",
+            "nameLocation": "2659:17:52",
+            "parameters": {
+              "id": 49566,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49557,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "2685:2:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49568,
+                  "src": "2677:10:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 49556,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2677:7:52",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49560,
+                  "mutability": "mutable",
+                  "name": "assetIds",
+                  "nameLocation": "2706:8:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49568,
+                  "src": "2689:25:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 49558,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "2689:7:52",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 49559,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2689:9:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49563,
+                  "mutability": "mutable",
+                  "name": "amounts",
+                  "nameLocation": "2733:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49568,
+                  "src": "2716:24:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 49561,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "2716:7:52",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 49562,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2716:9:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49565,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "2755:4:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49568,
+                  "src": "2742:17:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 49564,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2742:5:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2676:84:52"
+            },
+            "returnParameters": {
+              "id": 49567,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2777:0:52"
+            },
+            "scope": 49642,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49576,
+            "nodeType": "FunctionDefinition",
+            "src": "2889:67:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49569,
+              "nodeType": "StructuredDocumentation",
+              "src": "2784:100:52",
+              "text": " @notice checks if assetId exists in memory\n @param assetId assetId to check"
+            },
+            "functionSelector": "518e2bdd",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "assetExists",
+            "nameLocation": "2898:11:52",
+            "parameters": {
+              "id": 49572,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49571,
+                  "mutability": "mutable",
+                  "name": "assetId",
+                  "nameLocation": "2918:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49576,
+                  "src": "2910:15:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49570,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2910:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2909:17:52"
+            },
+            "returnParameters": {
+              "id": 49575,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49574,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49576,
+                  "src": "2950:4:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 49573,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2950:4:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2949:6:52"
+            },
+            "scope": 49642,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49586,
+            "nodeType": "FunctionDefinition",
+            "src": "3117:85:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49577,
+              "nodeType": "StructuredDocumentation",
+              "src": "2962:150:52",
+              "text": " @notice checks if account owns (is minter) of assetId\n @param assetId assetId to check\n @param account account to check"
+            },
+            "functionSelector": "473d6ea0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isAssetOwner",
+            "nameLocation": "3126:12:52",
+            "parameters": {
+              "id": 49582,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49579,
+                  "mutability": "mutable",
+                  "name": "assetId",
+                  "nameLocation": "3147:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49586,
+                  "src": "3139:15:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49578,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3139:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49581,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "3164:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49586,
+                  "src": "3156:15:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 49580,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3156:7:52",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3138:34:52"
+            },
+            "returnParameters": {
+              "id": 49585,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49584,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49586,
+                  "src": "3196:4:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 49583,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3196:4:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3195:6:52"
+            },
+            "scope": 49642,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49595,
+            "nodeType": "FunctionDefinition",
+            "src": "3400:83:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49587,
+              "nodeType": "StructuredDocumentation",
+              "src": "3208:187:52",
+              "text": " @param assetId AssetId to retrive its contents\n @return returns contents of assetId\n @dev contents are assetIds whhich where consumed to mint assetId"
+            },
+            "functionSelector": "390027b3",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAssetContent",
+            "nameLocation": "3409:15:52",
+            "parameters": {
+              "id": 49590,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49589,
+                  "mutability": "mutable",
+                  "name": "assetId",
+                  "nameLocation": "3433:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49595,
+                  "src": "3425:15:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49588,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3425:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3424:17:52"
+            },
+            "returnParameters": {
+              "id": 49594,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49593,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49595,
+                  "src": "3465:16:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 49591,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "3465:7:52",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 49592,
+                    "nodeType": "ArrayTypeName",
+                    "src": "3465:9:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3464:18:52"
+            },
+            "scope": 49642,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49605,
+            "nodeType": "FunctionDefinition",
+            "src": "3623:99:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49596,
+              "nodeType": "StructuredDocumentation",
+              "src": "3489:129:52",
+              "text": " @param assetId assetid\n @param contentId contentid\n @return returns the amount of contentId"
+            },
+            "functionSelector": "5e6d43ef",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAssetContentAmount",
+            "nameLocation": "3632:21:52",
+            "parameters": {
+              "id": 49601,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49598,
+                  "mutability": "mutable",
+                  "name": "assetId",
+                  "nameLocation": "3662:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49605,
+                  "src": "3654:15:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49597,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3654:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49600,
+                  "mutability": "mutable",
+                  "name": "contentId",
+                  "nameLocation": "3679:9:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49605,
+                  "src": "3671:17:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49599,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3671:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3653:36:52"
+            },
+            "returnParameters": {
+              "id": 49604,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49603,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49605,
+                  "src": "3713:7:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49602,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3713:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3712:9:52"
+            },
+            "scope": 49642,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49615,
+            "nodeType": "FunctionDefinition",
+            "src": "3904:104:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49606,
+              "nodeType": "StructuredDocumentation",
+              "src": "3728:171:52",
+              "text": " @notice returns the index of the content\n @param assetId assetId\n @param contentId contentid\n @return index the consumed content index"
+            },
+            "functionSelector": "c5290d28",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAssetContentIndex",
+            "nameLocation": "3913:20:52",
+            "parameters": {
+              "id": 49611,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49608,
+                  "mutability": "mutable",
+                  "name": "assetId",
+                  "nameLocation": "3942:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49615,
+                  "src": "3934:15:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49607,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3934:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49610,
+                  "mutability": "mutable",
+                  "name": "contentId",
+                  "nameLocation": "3959:9:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49615,
+                  "src": "3951:17:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49609,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3951:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3933:36:52"
+            },
+            "returnParameters": {
+              "id": 49614,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49613,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "4001:5:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49615,
+                  "src": "3993:13:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49612,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3993:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3992:15:52"
+            },
+            "scope": 49642,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49625,
+            "nodeType": "FunctionDefinition",
+            "src": "4246:114:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49616,
+              "nodeType": "StructuredDocumentation",
+              "src": "4014:227:52",
+              "text": " @notice returns the index of the content. Reverts if the contentId is not a content of the asset\n @param assetId assetId\n @param contentId contentid\n @return index the consumed content index"
+            },
+            "functionSelector": "51a5ec34",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAssetContentIndexWithRevert",
+            "nameLocation": "4255:30:52",
+            "parameters": {
+              "id": 49621,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49618,
+                  "mutability": "mutable",
+                  "name": "assetId",
+                  "nameLocation": "4294:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49625,
+                  "src": "4286:15:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49617,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4286:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49620,
+                  "mutability": "mutable",
+                  "name": "contentId",
+                  "nameLocation": "4311:9:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49625,
+                  "src": "4303:17:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49619,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4303:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4285:36:52"
+            },
+            "returnParameters": {
+              "id": 49624,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49623,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "4353:5:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49625,
+                  "src": "4345:13:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49622,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4345:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4344:15:52"
+            },
+            "scope": 49642,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49633,
+            "nodeType": "FunctionDefinition",
+            "src": "4470:74:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49626,
+              "nodeType": "StructuredDocumentation",
+              "src": "4366:99:52",
+              "text": " @notice returns count of the content of the asset\n @param assetId asset id"
+            },
+            "functionSelector": "1f54a327",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getContentCount",
+            "nameLocation": "4479:15:52",
+            "parameters": {
+              "id": 49629,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49628,
+                  "mutability": "mutable",
+                  "name": "assetId",
+                  "nameLocation": "4503:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49633,
+                  "src": "4495:15:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49627,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4495:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4494:17:52"
+            },
+            "returnParameters": {
+              "id": 49632,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49631,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49633,
+                  "src": "4535:7:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49630,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4535:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4534:9:52"
+            },
+            "scope": 49642,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 49641,
+            "nodeType": "FunctionDefinition",
+            "src": "4697:85:52",
+            "nodes": [],
+            "documentation": {
+              "id": 49634,
+              "nodeType": "StructuredDocumentation",
+              "src": "4550:142:52",
+              "text": " @param assetId assetId\n @return returns the unique file storage identifier of the assets contents if available"
+            },
+            "functionSelector": "57ac4b54",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAssetExternalContentRef",
+            "nameLocation": "4706:26:52",
+            "parameters": {
+              "id": 49637,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49636,
+                  "mutability": "mutable",
+                  "name": "assetId",
+                  "nameLocation": "4741:7:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49641,
+                  "src": "4733:15:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 49635,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4733:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4732:17:52"
+            },
+            "returnParameters": {
+              "id": 49640,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 49639,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49641,
+                  "src": "4773:7:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 49638,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4773:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4772:9:52"
+            },
+            "scope": 49642,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IAssetController",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 49494,
+          "nodeType": "StructuredDocumentation",
+          "src": "156:125:52",
+          "text": " @title IAssetController\n @author Yusuf\n @notice Defines interface for asset mint and consume functionlaity."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          49642
+        ],
+        "name": "IAssetController",
+        "nameLocation": "292:16:52",
+        "scope": 49643,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 52
+}

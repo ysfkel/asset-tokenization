@@ -1,0 +1,326 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "script/payroll/PayrollBeacon.s.sol",
+    "id": 49132,
+    "exportedSymbols": {
+      "PayrollBeacon": [
+        52323
+      ],
+      "Script": [
+        2405
+      ],
+      "ScriptBase": [
+        2366
+      ],
+      "StdChains": [
+        4561
+      ],
+      "StdCheatsSafe": [
+        6621
+      ],
+      "StdStorage": [
+        8489
+      ],
+      "StdStyle": [
+        11339
+      ],
+      "StdUtils": [
+        12187
+      ],
+      "UpgradeableBeacon": [
+        48418
+      ],
+      "VmSafe": [
+        13459
+      ],
+      "console": [
+        21995
+      ],
+      "console2": [
+        30120
+      ],
+      "deployPayrollBeacon": [
+        49131
+      ],
+      "safeconsole": [
+        43358
+      ],
+      "stdJson": [
+        8315
+      ],
+      "stdMath": [
+        8457
+      ],
+      "stdStorageSafe": [
+        9537
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:251:56",
+    "nodes": [
+      {
+        "id": 49112,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:56",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 49113,
+        "nodeType": "ImportDirective",
+        "src": "65:30:56",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/src/Script.sol",
+        "file": "forge-std/Script.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 49132,
+        "sourceUnit": 2406,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 49114,
+        "nodeType": "ImportDirective",
+        "src": "96:45:56",
+        "nodes": [],
+        "absolutePath": "src/payroll/PayrollBeacon.sol",
+        "file": "../../src/payroll/PayrollBeacon.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 49132,
+        "sourceUnit": 52324,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 49131,
+        "nodeType": "FunctionDefinition",
+        "src": "143:146:56",
+        "nodes": [],
+        "body": {
+          "id": 49130,
+          "nodeType": "Block",
+          "src": "230:59:56",
+          "nodes": [],
+          "statements": [
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "id": 49126,
+                        "name": "_implementation",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49116,
+                        "src": "269:15:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 49125,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "251:17:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_PayrollBeacon_$52323_$",
+                        "typeString": "function (address) returns (contract PayrollBeacon)"
+                      },
+                      "typeName": {
+                        "id": 49124,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 49123,
+                          "name": "PayrollBeacon",
+                          "nameLocations": [
+                            "255:13:56"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 52323,
+                          "src": "255:13:56"
+                        },
+                        "referencedDeclaration": 52323,
+                        "src": "255:13:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_PayrollBeacon_$52323",
+                          "typeString": "contract PayrollBeacon"
+                        }
+                      }
+                    },
+                    "id": 49127,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "251:34:56",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_PayrollBeacon_$52323",
+                      "typeString": "contract PayrollBeacon"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_contract$_PayrollBeacon_$52323",
+                      "typeString": "contract PayrollBeacon"
+                    }
+                  ],
+                  "id": 49122,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "nodeType": "ElementaryTypeNameExpression",
+                  "src": "243:7:56",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_address_$",
+                    "typeString": "type(address)"
+                  },
+                  "typeName": {
+                    "id": 49121,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "243:7:56",
+                    "typeDescriptions": {}
+                  }
+                },
+                "id": 49128,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "typeConversion",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "243:43:56",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "functionReturnParameters": 49120,
+              "id": 49129,
+              "nodeType": "Return",
+              "src": "236:50:56"
+            }
+          ]
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "deployPayrollBeacon",
+        "nameLocation": "152:19:56",
+        "parameters": {
+          "id": 49117,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 49116,
+              "mutability": "mutable",
+              "name": "_implementation",
+              "nameLocation": "180:15:56",
+              "nodeType": "VariableDeclaration",
+              "scope": 49131,
+              "src": "172:23:56",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 49115,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "172:7:56",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "171:25:56"
+        },
+        "returnParameters": {
+          "id": 49120,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 49119,
+              "mutability": "mutable",
+              "name": "_beaconAddress",
+              "nameLocation": "214:14:56",
+              "nodeType": "VariableDeclaration",
+              "scope": 49131,
+              "src": "206:22:56",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 49118,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "206:7:56",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "205:24:56"
+        },
+        "scope": 49132,
+        "stateMutability": "nonpayable",
+        "virtual": false,
+        "visibility": "internal"
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 56
+}

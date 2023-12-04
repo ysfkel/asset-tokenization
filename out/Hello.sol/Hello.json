@@ -1,0 +1,230 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "hellow",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50607880601d6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806355941d9714602d575b600080fd5b6107d060405190815260200160405180910390f3fea26469706673582212204aba089675575482f9201f9af96a64cdea0bddc867c3ae7123a81232336ace7d64736f6c63430008130033",
+    "sourceMap": "28:109:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806355941d9714602d575b600080fd5b6107d060405190815260200160405180910390f3fea26469706673582212204aba089675575482f9201f9af96a64cdea0bddc867c3ae7123a81232336ace7d64736f6c63430008130033",
+    "sourceMap": "28:109:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;57:78;123:4;57:78;;160:25:1;;;148:2;133:18;57:78:0;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "hellow()": "55941d97"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"hellow\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Hello.sol\":\"Hello\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/\"]},\"sources\":{\"src/Hello.sol\":{\"keccak256\":\"0xa0fa4d6337af8a1f11aed885e99f2f204f149648c8379ce604a9f646ea2d52c1\",\"urls\":[\"bzz-raw://c3a99342072aa6dac3ac40350a5aba018928670720ea017614c0eb5f6e20057a\",\"dweb:/ipfs/QmVhyQAJMic5eCSSBVWBfSGEUibhnrkqYQefU4UuPxxz6m\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "hellow",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Hello.sol": "Hello"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/Hello.sol": {
+        "keccak256": "0xa0fa4d6337af8a1f11aed885e99f2f204f149648c8379ce604a9f646ea2d52c1",
+        "urls": [
+          "bzz-raw://c3a99342072aa6dac3ac40350a5aba018928670720ea017614c0eb5f6e20057a",
+          "dweb:/ipfs/QmVhyQAJMic5eCSSBVWBfSGEUibhnrkqYQefU4UuPxxz6m"
+        ],
+        "license": null
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Hello.sol",
+    "id": 11,
+    "exportedSymbols": {
+      "Hello": [
+        10
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "2:136:0",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "2:24:0",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 10,
+        "nodeType": "ContractDefinition",
+        "src": "28:109:0",
+        "nodes": [
+          {
+            "id": 9,
+            "nodeType": "FunctionDefinition",
+            "src": "57:78:0",
+            "nodes": [],
+            "body": {
+              "id": 8,
+              "nodeType": "Block",
+              "src": "106:29:0",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "hexValue": "32303030",
+                    "id": 6,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "123:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_2000_by_1",
+                      "typeString": "int_const 2000"
+                    },
+                    "value": "2000"
+                  },
+                  "functionReturnParameters": 5,
+                  "id": 7,
+                  "nodeType": "Return",
+                  "src": "116:11:0"
+                }
+              ]
+            },
+            "functionSelector": "55941d97",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "hellow",
+            "nameLocation": "66:6:0",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "72:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9,
+                  "src": "97:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "97:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "96:9:0"
+            },
+            "scope": 10,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Hello",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          10
+        ],
+        "name": "Hello",
+        "nameLocation": "37:5:0",
+        "scope": 11,
+        "usedErrors": []
+      }
+    ]
+  },
+  "id": 0
+}

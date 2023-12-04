@@ -1,0 +1,399 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "script/payroll/PayrollImpl.s.sol",
+    "id": 49185,
+    "exportedSymbols": {
+      "AccessControlUpgradeable": [
+        43694
+      ],
+      "IPayroll": [
+        52722
+      ],
+      "Initializable": [
+        44433
+      ],
+      "P": [
+        52779
+      ],
+      "Payroll": [
+        52305
+      ],
+      "Script": [
+        2405
+      ],
+      "ScriptBase": [
+        2366
+      ],
+      "StdChains": [
+        4561
+      ],
+      "StdCheatsSafe": [
+        6621
+      ],
+      "StdStorage": [
+        8489
+      ],
+      "StdStyle": [
+        11339
+      ],
+      "StdUtils": [
+        12187
+      ],
+      "VmSafe": [
+        13459
+      ],
+      "console": [
+        21995
+      ],
+      "console2": [
+        30120
+      ],
+      "deployPayrollImplementation": [
+        49184
+      ],
+      "safeconsole": [
+        43358
+      ],
+      "stdJson": [
+        8315
+      ],
+      "stdMath": [
+        8457
+      ],
+      "stdStorageSafe": [
+        9537
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:266:58",
+    "nodes": [
+      {
+        "id": 49158,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:58",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 49159,
+        "nodeType": "ImportDirective",
+        "src": "65:30:58",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/src/Script.sol",
+        "file": "forge-std/Script.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 49185,
+        "sourceUnit": 2406,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 49160,
+        "nodeType": "ImportDirective",
+        "src": "96:39:58",
+        "nodes": [],
+        "absolutePath": "src/payroll/Payroll.sol",
+        "file": "../../src/payroll/Payroll.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 49185,
+        "sourceUnit": 52306,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 49184,
+        "nodeType": "FunctionDefinition",
+        "src": "137:167:58",
+        "nodes": [],
+        "body": {
+          "id": 49183,
+          "nodeType": "Block",
+          "src": "209:95:58",
+          "nodes": [],
+          "statements": [
+            {
+              "assignments": [
+                49167
+              ],
+              "declarations": [
+                {
+                  "constant": false,
+                  "id": 49167,
+                  "mutability": "mutable",
+                  "name": "_beacon",
+                  "nameLocation": "223:7:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49183,
+                  "src": "215:15:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Payroll_$52305",
+                    "typeString": "contract Payroll"
+                  },
+                  "typeName": {
+                    "id": 49166,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 49165,
+                      "name": "Payroll",
+                      "nameLocations": [
+                        "215:7:58"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 52305,
+                      "src": "215:7:58"
+                    },
+                    "referencedDeclaration": 52305,
+                    "src": "215:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Payroll_$52305",
+                      "typeString": "contract Payroll"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "id": 49172,
+              "initialValue": {
+                "arguments": [],
+                "expression": {
+                  "argumentTypes": [],
+                  "id": 49170,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "NewExpression",
+                  "src": "233:11:58",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_Payroll_$52305_$",
+                    "typeString": "function () returns (contract Payroll)"
+                  },
+                  "typeName": {
+                    "id": 49169,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 49168,
+                      "name": "Payroll",
+                      "nameLocations": [
+                        "237:7:58"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 52305,
+                      "src": "237:7:58"
+                    },
+                    "referencedDeclaration": 52305,
+                    "src": "237:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Payroll_$52305",
+                      "typeString": "contract Payroll"
+                    }
+                  }
+                },
+                "id": 49171,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "functionCall",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "233:13:58",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_Payroll_$52305",
+                  "typeString": "contract Payroll"
+                }
+              },
+              "nodeType": "VariableDeclarationStatement",
+              "src": "215:31:58"
+            },
+            {
+              "expression": {
+                "arguments": [],
+                "expression": {
+                  "argumentTypes": [],
+                  "expression": {
+                    "id": 49173,
+                    "name": "_beacon",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 49167,
+                    "src": "252:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Payroll_$52305",
+                      "typeString": "contract Payroll"
+                    }
+                  },
+                  "id": 49175,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "memberLocation": "260:10:58",
+                  "memberName": "initialize",
+                  "nodeType": "MemberAccess",
+                  "referencedDeclaration": 51809,
+                  "src": "252:18:58",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                    "typeString": "function () external"
+                  }
+                },
+                "id": 49176,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "functionCall",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "252:20:58",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_tuple$__$",
+                  "typeString": "tuple()"
+                }
+              },
+              "id": 49177,
+              "nodeType": "ExpressionStatement",
+              "src": "252:20:58"
+            },
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "id": 49180,
+                    "name": "_beacon",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 49167,
+                    "src": "293:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Payroll_$52305",
+                      "typeString": "contract Payroll"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_contract$_Payroll_$52305",
+                      "typeString": "contract Payroll"
+                    }
+                  ],
+                  "id": 49179,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "nodeType": "ElementaryTypeNameExpression",
+                  "src": "285:7:58",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_address_$",
+                    "typeString": "type(address)"
+                  },
+                  "typeName": {
+                    "id": 49178,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "285:7:58",
+                    "typeDescriptions": {}
+                  }
+                },
+                "id": 49181,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "typeConversion",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "285:16:58",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "functionReturnParameters": 49164,
+              "id": 49182,
+              "nodeType": "Return",
+              "src": "278:23:58"
+            }
+          ]
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "deployPayrollImplementation",
+        "nameLocation": "146:27:58",
+        "parameters": {
+          "id": 49161,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "173:2:58"
+        },
+        "returnParameters": {
+          "id": 49164,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 49163,
+              "mutability": "mutable",
+              "name": "payrollAadress",
+              "nameLocation": "193:14:58",
+              "nodeType": "VariableDeclaration",
+              "scope": 49184,
+              "src": "185:22:58",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 49162,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "185:7:58",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "184:24:58"
+        },
+        "scope": 49185,
+        "stateMutability": "nonpayable",
+        "virtual": false,
+        "visibility": "internal"
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 58
+}

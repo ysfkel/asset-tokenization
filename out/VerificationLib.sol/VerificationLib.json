@@ -1,0 +1,2478 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x61063a61003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100615760003560e01c806333e1e174146100665780639609027f146100c0578063a69b960f146100e2578063b3c0a94314610102578063ff7d076c1461012d575b600080fd5b610079610074366004610491565b61014d565b6040516100b7919081511515815260208083015190820152604080830151908201526060918201516001600160a01b03169181019190915260800190565b60405180910390f35b8180156100cc57600080fd5b506100e06100db366004610491565b6101c4565b005b6100f46100f03660046104bd565b5490565b6040519081526020016100b7565b6101156101103660046104d6565b61031e565b6040516001600160a01b0390911681526020016100b7565b81801561013957600080fd5b506100e0610148366004610508565b610351565b60408051608080820183526000808352602080840182905283850182905260609384018290526001600160a01b038681168352600188810183529286902086519485018752805460ff1615158552928301549184019190915260028201549483019490945260030154909216908201525b92915050565b6001600160a01b038116600090815260038301602052604090205460ff166101ea575050565b6001600160a01b0381166000908152600380840160209081526040808420805460ff19908116909155600180880184528286208054909216825581810186905560028083018790559190940180546001600160a01b031916905586019091528220548454909291859161025d91906105b7565b8154811061026d5761026d6105d8565b60009182526020808320909101546001600160a01b039081168084526002880190925260408084208690559086168352822091909155845490915081908590849081106102bc576102bc6105d8565b600091825260209091200180546001600160a01b0319166001600160a01b039290921691909117905583548490806102f6576102f66105ee565b600082815260209020810160001990810180546001600160a01b031916905501905550505050565b6000826000018281548110610335576103356105d8565b6000918252602090912001546001600160a01b03169392505050565b6001600160a01b038216600090815260038401602052604090205460ff16156103d6576001600160a01b039182166000908152600193840160209081526040918290208351815460ff19169015151781559083015194810194909455810151600284015560600151600390920180546001600160a01b03191692909116919091179055565b6001600160a01b038083166000818152600380870160209081526040808420805460ff1990811660019081179092558a8201845282862089518154901515921691909117815588840151818301558883015160028083019190915560608a0151919095018054919098166001600160a01b0319918216179097558954938a01835290842083905582018855878352909120018054909216179055505050565b80356001600160a01b038116811461048c57600080fd5b919050565b600080604083850312156104a457600080fd5b823591506104b460208401610475565b90509250929050565b6000602082840312156104cf57600080fd5b5035919050565b600080604083850312156104e957600080fd5b50508035926020909101359150565b8035801515811461048c57600080fd5b600080600083850360c081121561051e57600080fd5b8435935061052e60208601610475565b92506080603f198201121561054257600080fd5b506040516080810181811067ffffffffffffffff8211171561057457634e487b7160e01b600052604160045260246000fd5b8060405250610585604086016104f8565b815260608501356020820152608085013560408201526105a760a08601610475565b6060820152809150509250925092565b818103818111156101be57634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052603160045260246000fdfea26469706673582212203b60ffbf2f98bfdde1548954d872880d3beb68bdae26562dd4f46923ea31409f64736f6c63430008130033",
+    "sourceMap": "304:1547:68:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;304:1547:68;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600436106100615760003560e01c806333e1e174146100665780639609027f146100c0578063a69b960f146100e2578063b3c0a94314610102578063ff7d076c1461012d575b600080fd5b610079610074366004610491565b61014d565b6040516100b7919081511515815260208083015190820152604080830151908201526060918201516001600160a01b03169181019190915260800190565b60405180910390f35b8180156100cc57600080fd5b506100e06100db366004610491565b6101c4565b005b6100f46100f03660046104bd565b5490565b6040519081526020016100b7565b6101156101103660046104d6565b61031e565b6040516001600160a01b0390911681526020016100b7565b81801561013957600080fd5b506100e0610148366004610508565b610351565b60408051608080820183526000808352602080840182905283850182905260609384018290526001600160a01b038681168352600188810183529286902086519485018752805460ff1615158552928301549184019190915260028201549483019490945260030154909216908201525b92915050565b6001600160a01b038116600090815260038301602052604090205460ff166101ea575050565b6001600160a01b0381166000908152600380840160209081526040808420805460ff19908116909155600180880184528286208054909216825581810186905560028083018790559190940180546001600160a01b031916905586019091528220548454909291859161025d91906105b7565b8154811061026d5761026d6105d8565b60009182526020808320909101546001600160a01b039081168084526002880190925260408084208690559086168352822091909155845490915081908590849081106102bc576102bc6105d8565b600091825260209091200180546001600160a01b0319166001600160a01b039290921691909117905583548490806102f6576102f66105ee565b600082815260209020810160001990810180546001600160a01b031916905501905550505050565b6000826000018281548110610335576103356105d8565b6000918252602090912001546001600160a01b03169392505050565b6001600160a01b038216600090815260038401602052604090205460ff16156103d6576001600160a01b039182166000908152600193840160209081526040918290208351815460ff19169015151781559083015194810194909455810151600284015560600151600390920180546001600160a01b03191692909116919091179055565b6001600160a01b038083166000818152600380870160209081526040808420805460ff1990811660019081179092558a8201845282862089518154901515921691909117815588840151818301558883015160028083019190915560608a0151919095018054919098166001600160a01b0319918216179097558954938a01835290842083905582018855878352909120018054909216179055505050565b80356001600160a01b038116811461048c57600080fd5b919050565b600080604083850312156104a457600080fd5b823591506104b460208401610475565b90509250929050565b6000602082840312156104cf57600080fd5b5035919050565b600080604083850312156104e957600080fd5b50508035926020909101359150565b8035801515811461048c57600080fd5b600080600083850360c081121561051e57600080fd5b8435935061052e60208601610475565b92506080603f198201121561054257600080fd5b506040516080810181811067ffffffffffffffff8211171561057457634e487b7160e01b600052604160045260246000fd5b8060405250610585604086016104f8565b815260608501356020820152608085013560408201526105a760a08601610475565b6060820152809150509250925092565b818103818111156101be57634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052603160045260246000fdfea26469706673582212203b60ffbf2f98bfdde1548954d872880d3beb68bdae26562dd4f46923ea31409f64736f6c63430008130033",
+    "sourceMap": "304:1547:68:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;654:144;;;;;;:::i;:::-;;:::i;:::-;;;;;;733:13:83;;726:21;719:29;701:48;;805:4;793:17;;;787:24;765:20;;;758:54;868:4;856:17;;;850:24;828:20;;;821:54;935:4;923:17;;;917:24;-1:-1:-1;;;;;913:50:83;891:20;;;884:80;;;;688:3;673:19;;484:486;654:144:68;;;;;;;;1416:433;;;;;;;;;;-1:-1:-1;1416:433:68;;;;;:::i;:::-;;:::i;:::-;;944:110;;;;;;:::i;:::-;1032:15;;944:110;;;;1347:25:83;;;1335:2;1320:18;944:110:68;1193:185:83;804:134:68;;;;;;:::i;:::-;;:::i;:::-;;;-1:-1:-1;;;;;1841:32:83;;;1823:51;;1811:2;1796:18;804:134:68;1669:211:83;1060:350:68;;;;;;;;;;-1:-1:-1;1060:350:68;;;;;:::i;:::-;;:::i;654:144::-;-1:-1:-1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;776:15:68;;;;;:10;;;;:15;;;;;;769:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;654:144;;;;;:::o;1416:433::-;-1:-1:-1;;;;;1494:17:68;;;;;;:12;;;:17;;;;;;;;1489:55;;1416:433;;:::o;1489:55::-;-1:-1:-1;;;;;1561:17:68;;;;;;:12;;;;:17;;;;;;;;1554:24;;-1:-1:-1;;1554:24:68;;;;;;;1595:10;;;:15;;;;;1588:22;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;1588:22:68;;;1637:11;;:16;;;;;;1690:15;;1637:16;;1561:17;:3;;1690:19;;1554:24;1690:19;:::i;:::-;1681:29;;;;;;;;:::i;:::-;;;;;;;;;;;;;-1:-1:-1;;;;;1681:29:68;;;1721:20;;;:11;;;:20;;;;;;;:28;;;1766:16;;;;;;;1759:23;;;;1793:15;;1681:29;;-1:-1:-1;1681:29:68;;1721:3;;1744:5;;1793:15;;;;;;:::i;:::-;;;;;;;;;;:25;;-1:-1:-1;;;;;;1793:25:68;-1:-1:-1;;;;;1793:25:68;;;;;;;;;;1828:14;;;;;;;;;:::i;:::-;;;;;;;;;;-1:-1:-1;;1828:14:68;;;;;-1:-1:-1;;;;;;1828:14:68;;;;;;-1:-1:-1;;;;1416:433:68:o;804:134::-;890:7;916:3;:8;;925:5;916:15;;;;;;;;:::i;:::-;;;;;;;;;;;-1:-1:-1;;;;;916:15:68;;804:134;-1:-1:-1;;;804:134:68:o;1060:350::-;-1:-1:-1;;;;;1169:17:68;;;;;;:12;;;:17;;;;;;;;1165:239;;;-1:-1:-1;;;;;1202:15:68;;;;;;;:10;;;;:15;;;;;;;;;:21;;;;-1:-1:-1;;1202:21:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;1202:21:68;;;;;;;;;;;1060:350::o;1165:239::-;-1:-1:-1;;;;;1254:17:68;;;;;;;:12;;;;:17;;;;;;;;:24;;-1:-1:-1;;1254:24:68;;;1274:4;1254:24;;;;;;1292:10;;;:15;;;;;:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;1292:21:68;;;;;;;1346:15;;1327:11;;;:16;;;;;:34;;;1375:18;;;;;;;;;;;;;;;;;;;1060:350;;;:::o;14:173:83:-;82:20;;-1:-1:-1;;;;;131:31:83;;121:42;;111:70;;177:1;174;167:12;111:70;14:173;;;:::o;192:287::-;293:6;301;354:2;342:9;333:7;329:23;325:32;322:52;;;370:1;367;360:12;322:52;406:9;393:23;383:33;;435:38;469:2;458:9;454:18;435:38;:::i;:::-;425:48;;192:287;;;;;:::o;975:213::-;1067:6;1120:2;1108:9;1099:7;1095:23;1091:32;1088:52;;;1136:1;1133;1126:12;1088:52;-1:-1:-1;1159:23:83;;975:213;-1:-1:-1;975:213:83:o;1383:281::-;1484:6;1492;1545:2;1533:9;1524:7;1520:23;1516:32;1513:52;;;1561:1;1558;1551:12;1513:52;-1:-1:-1;;1584:23:83;;;1654:2;1639:18;;;1626:32;;-1:-1:-1;1383:281:83:o;1885:160::-;1950:20;;2006:13;;1999:21;1989:32;;1979:60;;2035:1;2032;2025:12;2050:1006;2191:6;2199;2207;2251:9;2242:7;2238:23;2281:3;2277:2;2273:12;2270:32;;;2298:1;2295;2288:12;2270:32;2334:9;2321:23;2311:33;;2363:38;2397:2;2386:9;2382:18;2363:38;:::i;:::-;2353:48;-1:-1:-1;2435:4:83;-1:-1:-1;;2417:16:83;;2413:27;2410:47;;;2453:1;2450;2443:12;2410:47;;2486:2;2480:9;2528:4;2520:6;2516:17;2599:6;2587:10;2584:22;2563:18;2551:10;2548:34;2545:62;2542:185;;;2649:10;2644:3;2640:20;2637:1;2630:31;2684:4;2681:1;2674:15;2712:4;2709:1;2702:15;2542:185;2747:10;2743:2;2736:22;;2782:35;2813:2;2802:9;2798:18;2782:35;:::i;:::-;2774:6;2767:51;2879:2;2868:9;2864:18;2851:32;2846:2;2838:6;2834:15;2827:57;2945:4;2934:9;2930:20;2917:34;2912:2;2904:6;2900:15;2893:59;2985:39;3019:3;3008:9;3004:19;2985:39;:::i;:::-;2980:2;2972:6;2968:15;2961:64;3044:6;3034:16;;;2050:1006;;;;;:::o;3061:225::-;3128:9;;;3149:11;;;3146:134;;;3202:10;3197:3;3193:20;3190:1;3183:31;3237:4;3234:1;3227:15;3265:4;3262:1;3255:15;3291:127;3352:10;3347:3;3343:20;3340:1;3333:31;3383:4;3380:1;3373:15;3407:4;3404:1;3397:15;3423:127;3484:10;3479:3;3475:20;3472:1;3465:31;3515:4;3512:1;3505:15;3539:4;3536:1;3529:15",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "get(VerificationLib.Verifications storage,address)": "33e1e174",
+    "getKeyAtIndex(VerificationLib.Verifications storage,uint256)": "b3c0a943",
+    "remove(VerificationLib.Verifications storage,address)": "9609027f",
+    "set(VerificationLib.Verifications storage,address,DataTypes.Verification)": "ff7d076c",
+    "size(VerificationLib.Verifications storage)": "a69b960f"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/asset/libraries/VerificationLib.sol\":\"VerificationLib\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/\"]},\"sources\":{\"src/asset/libraries/DataTypes.sol\":{\"keccak256\":\"0x2663666588cddf924b0e73539906cd566b45420d53135ff26cacbb4bb62df1f3\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://4ae45891c026186f45f0ba2ef433777b0efc5b8538a773140daf94fa6679550d\",\"dweb:/ipfs/QmZRB8szv2f4zNiCExYGa9SU3cXtYzfnr8bYCN9EKXNW21\"]},\"src/asset/libraries/VerificationLib.sol\":{\"keccak256\":\"0xdc835900501f6d299b5f667193b6174fd4529e4cbfb3b19597d062794954a4c8\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://e730a6c904ed727b31caec1fe1656ce5132b986ea22368e48b7ef36d6307f8a3\",\"dweb:/ipfs/QmRDhMjQbmdqXWct4qnFTMCqn196cBQjmjJYF4edrnzYiw\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/asset/libraries/VerificationLib.sol": "VerificationLib"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/asset/libraries/DataTypes.sol": {
+        "keccak256": "0x2663666588cddf924b0e73539906cd566b45420d53135ff26cacbb4bb62df1f3",
+        "urls": [
+          "bzz-raw://4ae45891c026186f45f0ba2ef433777b0efc5b8538a773140daf94fa6679550d",
+          "dweb:/ipfs/QmZRB8szv2f4zNiCExYGa9SU3cXtYzfnr8bYCN9EKXNW21"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/asset/libraries/VerificationLib.sol": {
+        "keccak256": "0xdc835900501f6d299b5f667193b6174fd4529e4cbfb3b19597d062794954a4c8",
+        "urls": [
+          "bzz-raw://e730a6c904ed727b31caec1fe1656ce5132b986ea22368e48b7ef36d6307f8a3",
+          "dweb:/ipfs/QmRDhMjQbmdqXWct4qnFTMCqn196cBQjmjJYF4edrnzYiw"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/asset/libraries/VerificationLib.sol",
+    "id": 52073,
+    "exportedSymbols": {
+      "DataTypes": [
+        51863
+      ],
+      "VerificationLib": [
+        52072
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "207:1645:68",
+    "nodes": [
+      {
+        "id": 51868,
+        "nodeType": "ImportDirective",
+        "src": "207:25:68",
+        "nodes": [],
+        "absolutePath": "src/asset/libraries/DataTypes.sol",
+        "file": "./DataTypes.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 52073,
+        "sourceUnit": 51864,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 51869,
+        "nodeType": "PragmaDirective",
+        "src": "234:24:68",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 51871,
+        "nodeType": "ImportDirective",
+        "src": "260:42:68",
+        "nodes": [],
+        "absolutePath": "src/asset/libraries/DataTypes.sol",
+        "file": "./DataTypes.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 52073,
+        "sourceUnit": 51864,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 51870,
+              "name": "DataTypes",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 51863,
+              "src": "268:9:68",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 52072,
+        "nodeType": "ContractDefinition",
+        "src": "304:1547:68",
+        "nodes": [
+          {
+            "id": 51888,
+            "nodeType": "StructDefinition",
+            "src": "449:199:68",
+            "nodes": [],
+            "canonicalName": "VerificationLib.Verifications",
+            "members": [
+              {
+                "constant": false,
+                "id": 51874,
+                "mutability": "mutable",
+                "name": "keys",
+                "nameLocation": "490:4:68",
+                "nodeType": "VariableDeclaration",
+                "scope": 51888,
+                "src": "480:14:68",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                  "typeString": "address[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 51872,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "480:7:68",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 51873,
+                  "nodeType": "ArrayTypeName",
+                  "src": "480:9:68",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                    "typeString": "address[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 51879,
+                "mutability": "mutable",
+                "name": "values",
+                "nameLocation": "547:6:68",
+                "nodeType": "VariableDeclaration",
+                "scope": 51888,
+                "src": "504:49:68",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Verification_$51862_storage_$",
+                  "typeString": "mapping(address => struct DataTypes.Verification)"
+                },
+                "typeName": {
+                  "id": 51878,
+                  "keyName": "",
+                  "keyNameLocation": "-1:-1:-1",
+                  "keyType": {
+                    "id": 51875,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "512:7:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "Mapping",
+                  "src": "504:42:68",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Verification_$51862_storage_$",
+                    "typeString": "mapping(address => struct DataTypes.Verification)"
+                  },
+                  "valueName": "",
+                  "valueNameLocation": "-1:-1:-1",
+                  "valueType": {
+                    "id": 51877,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 51876,
+                      "name": "DataTypes.Verification",
+                      "nameLocations": [
+                        "523:9:68",
+                        "533:12:68"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 51862,
+                      "src": "523:22:68"
+                    },
+                    "referencedDeclaration": 51862,
+                    "src": "523:22:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verification_$51862_storage_ptr",
+                      "typeString": "struct DataTypes.Verification"
+                    }
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 51883,
+                "mutability": "mutable",
+                "name": "indexOf",
+                "nameLocation": "591:7:68",
+                "nodeType": "VariableDeclaration",
+                "scope": 51888,
+                "src": "563:35:68",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                  "typeString": "mapping(address => uint256)"
+                },
+                "typeName": {
+                  "id": 51882,
+                  "keyName": "",
+                  "keyNameLocation": "-1:-1:-1",
+                  "keyType": {
+                    "id": 51880,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "571:7:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "Mapping",
+                  "src": "563:27:68",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                    "typeString": "mapping(address => uint256)"
+                  },
+                  "valueName": "",
+                  "valueNameLocation": "-1:-1:-1",
+                  "valueType": {
+                    "id": 51881,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "582:7:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 51887,
+                "mutability": "mutable",
+                "name": "inserted",
+                "nameLocation": "633:8:68",
+                "nodeType": "VariableDeclaration",
+                "scope": 51888,
+                "src": "608:33:68",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                  "typeString": "mapping(address => bool)"
+                },
+                "typeName": {
+                  "id": 51886,
+                  "keyName": "",
+                  "keyNameLocation": "-1:-1:-1",
+                  "keyType": {
+                    "id": 51884,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "616:7:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "Mapping",
+                  "src": "608:24:68",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                    "typeString": "mapping(address => bool)"
+                  },
+                  "valueName": "",
+                  "valueNameLocation": "-1:-1:-1",
+                  "valueType": {
+                    "id": 51885,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "627:4:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Verifications",
+            "nameLocation": "456:13:68",
+            "scope": 52072,
+            "visibility": "public"
+          },
+          {
+            "id": 51905,
+            "nodeType": "FunctionDefinition",
+            "src": "654:144:68",
+            "nodes": [],
+            "body": {
+              "id": 51904,
+              "nodeType": "Block",
+              "src": "759:39:68",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "baseExpression": {
+                      "expression": {
+                        "id": 51899,
+                        "name": "map",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51891,
+                        "src": "776:3:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                          "typeString": "struct VerificationLib.Verifications storage pointer"
+                        }
+                      },
+                      "id": 51900,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "780:6:68",
+                      "memberName": "values",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51879,
+                      "src": "776:10:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Verification_$51862_storage_$",
+                        "typeString": "mapping(address => struct DataTypes.Verification storage ref)"
+                      }
+                    },
+                    "id": 51902,
+                    "indexExpression": {
+                      "id": 51901,
+                      "name": "key",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51893,
+                      "src": "787:3:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "776:15:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verification_$51862_storage",
+                      "typeString": "struct DataTypes.Verification storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 51898,
+                  "id": 51903,
+                  "nodeType": "Return",
+                  "src": "769:22:68"
+                }
+              ]
+            },
+            "functionSelector": "33e1e174",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "get",
+            "nameLocation": "663:3:68",
+            "parameters": {
+              "id": 51894,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51891,
+                  "mutability": "mutable",
+                  "name": "map",
+                  "nameLocation": "689:3:68",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51905,
+                  "src": "667:25:68",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                    "typeString": "struct VerificationLib.Verifications"
+                  },
+                  "typeName": {
+                    "id": 51890,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 51889,
+                      "name": "Verifications",
+                      "nameLocations": [
+                        "667:13:68"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 51888,
+                      "src": "667:13:68"
+                    },
+                    "referencedDeclaration": 51888,
+                    "src": "667:13:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                      "typeString": "struct VerificationLib.Verifications"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 51893,
+                  "mutability": "mutable",
+                  "name": "key",
+                  "nameLocation": "702:3:68",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51905,
+                  "src": "694:11:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 51892,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "694:7:68",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "666:40:68"
+            },
+            "returnParameters": {
+              "id": 51898,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51897,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51905,
+                  "src": "728:29:68",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Verification_$51862_memory_ptr",
+                    "typeString": "struct DataTypes.Verification"
+                  },
+                  "typeName": {
+                    "id": 51896,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 51895,
+                      "name": "DataTypes.Verification",
+                      "nameLocations": [
+                        "728:9:68",
+                        "738:12:68"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 51862,
+                      "src": "728:22:68"
+                    },
+                    "referencedDeclaration": 51862,
+                    "src": "728:22:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verification_$51862_storage_ptr",
+                      "typeString": "struct DataTypes.Verification"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "727:31:68"
+            },
+            "scope": 52072,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 51921,
+            "nodeType": "FunctionDefinition",
+            "src": "804:134:68",
+            "nodes": [],
+            "body": {
+              "id": 51920,
+              "nodeType": "Block",
+              "src": "899:39:68",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "baseExpression": {
+                      "expression": {
+                        "id": 51915,
+                        "name": "map",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51908,
+                        "src": "916:3:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                          "typeString": "struct VerificationLib.Verifications storage pointer"
+                        }
+                      },
+                      "id": 51916,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "920:4:68",
+                      "memberName": "keys",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51874,
+                      "src": "916:8:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                        "typeString": "address[] storage ref"
+                      }
+                    },
+                    "id": 51918,
+                    "indexExpression": {
+                      "id": 51917,
+                      "name": "index",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51910,
+                      "src": "925:5:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "916:15:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 51914,
+                  "id": 51919,
+                  "nodeType": "Return",
+                  "src": "909:22:68"
+                }
+              ]
+            },
+            "functionSelector": "b3c0a943",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getKeyAtIndex",
+            "nameLocation": "813:13:68",
+            "parameters": {
+              "id": 51911,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51908,
+                  "mutability": "mutable",
+                  "name": "map",
+                  "nameLocation": "849:3:68",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51921,
+                  "src": "827:25:68",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                    "typeString": "struct VerificationLib.Verifications"
+                  },
+                  "typeName": {
+                    "id": 51907,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 51906,
+                      "name": "Verifications",
+                      "nameLocations": [
+                        "827:13:68"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 51888,
+                      "src": "827:13:68"
+                    },
+                    "referencedDeclaration": 51888,
+                    "src": "827:13:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                      "typeString": "struct VerificationLib.Verifications"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 51910,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "862:5:68",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51921,
+                  "src": "854:13:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 51909,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "854:7:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "826:42:68"
+            },
+            "returnParameters": {
+              "id": 51914,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51913,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51921,
+                  "src": "890:7:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 51912,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "890:7:68",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "889:9:68"
+            },
+            "scope": 52072,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 51934,
+            "nodeType": "FunctionDefinition",
+            "src": "944:110:68",
+            "nodes": [],
+            "body": {
+              "id": 51933,
+              "nodeType": "Block",
+              "src": "1015:39:68",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "expression": {
+                      "expression": {
+                        "id": 51929,
+                        "name": "map",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51924,
+                        "src": "1032:3:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                          "typeString": "struct VerificationLib.Verifications storage pointer"
+                        }
+                      },
+                      "id": 51930,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1036:4:68",
+                      "memberName": "keys",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51874,
+                      "src": "1032:8:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                        "typeString": "address[] storage ref"
+                      }
+                    },
+                    "id": 51931,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "1041:6:68",
+                    "memberName": "length",
+                    "nodeType": "MemberAccess",
+                    "src": "1032:15:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 51928,
+                  "id": 51932,
+                  "nodeType": "Return",
+                  "src": "1025:22:68"
+                }
+              ]
+            },
+            "functionSelector": "a69b960f",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "size",
+            "nameLocation": "953:4:68",
+            "parameters": {
+              "id": 51925,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51924,
+                  "mutability": "mutable",
+                  "name": "map",
+                  "nameLocation": "980:3:68",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51934,
+                  "src": "958:25:68",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                    "typeString": "struct VerificationLib.Verifications"
+                  },
+                  "typeName": {
+                    "id": 51923,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 51922,
+                      "name": "Verifications",
+                      "nameLocations": [
+                        "958:13:68"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 51888,
+                      "src": "958:13:68"
+                    },
+                    "referencedDeclaration": 51888,
+                    "src": "958:13:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                      "typeString": "struct VerificationLib.Verifications"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "957:27:68"
+            },
+            "returnParameters": {
+              "id": 51928,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51927,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51934,
+                  "src": "1006:7:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 51926,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1006:7:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1005:9:68"
+            },
+            "scope": 52072,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 51995,
+            "nodeType": "FunctionDefinition",
+            "src": "1060:350:68",
+            "nodes": [],
+            "body": {
+              "id": 51994,
+              "nodeType": "Block",
+              "src": "1155:255:68",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "baseExpression": {
+                      "expression": {
+                        "id": 51945,
+                        "name": "map",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51937,
+                        "src": "1169:3:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                          "typeString": "struct VerificationLib.Verifications storage pointer"
+                        }
+                      },
+                      "id": 51946,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1173:8:68",
+                      "memberName": "inserted",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51887,
+                      "src": "1169:12:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                        "typeString": "mapping(address => bool)"
+                      }
+                    },
+                    "id": 51948,
+                    "indexExpression": {
+                      "id": 51947,
+                      "name": "key",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51939,
+                      "src": "1182:3:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1169:17:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 51992,
+                    "nodeType": "Block",
+                    "src": "1240:164:68",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 51964,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "baseExpression": {
+                              "expression": {
+                                "id": 51958,
+                                "name": "map",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 51937,
+                                "src": "1254:3:68",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                                  "typeString": "struct VerificationLib.Verifications storage pointer"
+                                }
+                              },
+                              "id": 51961,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberLocation": "1258:8:68",
+                              "memberName": "inserted",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 51887,
+                              "src": "1254:12:68",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                                "typeString": "mapping(address => bool)"
+                              }
+                            },
+                            "id": 51962,
+                            "indexExpression": {
+                              "id": 51960,
+                              "name": "key",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 51939,
+                              "src": "1267:3:68",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "nodeType": "IndexAccess",
+                            "src": "1254:17:68",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "hexValue": "74727565",
+                            "id": 51963,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1274:4:68",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "true"
+                          },
+                          "src": "1254:24:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 51965,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1254:24:68"
+                      },
+                      {
+                        "expression": {
+                          "id": 51972,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "baseExpression": {
+                              "expression": {
+                                "id": 51966,
+                                "name": "map",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 51937,
+                                "src": "1292:3:68",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                                  "typeString": "struct VerificationLib.Verifications storage pointer"
+                                }
+                              },
+                              "id": 51969,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberLocation": "1296:6:68",
+                              "memberName": "values",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 51879,
+                              "src": "1292:10:68",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Verification_$51862_storage_$",
+                                "typeString": "mapping(address => struct DataTypes.Verification storage ref)"
+                              }
+                            },
+                            "id": 51970,
+                            "indexExpression": {
+                              "id": 51968,
+                              "name": "key",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 51939,
+                              "src": "1303:3:68",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "nodeType": "IndexAccess",
+                            "src": "1292:15:68",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Verification_$51862_storage",
+                              "typeString": "struct DataTypes.Verification storage ref"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "id": 51971,
+                            "name": "val",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 51942,
+                            "src": "1310:3:68",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Verification_$51862_memory_ptr",
+                              "typeString": "struct DataTypes.Verification memory"
+                            }
+                          },
+                          "src": "1292:21:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Verification_$51862_storage",
+                            "typeString": "struct DataTypes.Verification storage ref"
+                          }
+                        },
+                        "id": 51973,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1292:21:68"
+                      },
+                      {
+                        "expression": {
+                          "id": 51982,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "baseExpression": {
+                              "expression": {
+                                "id": 51974,
+                                "name": "map",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 51937,
+                                "src": "1327:3:68",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                                  "typeString": "struct VerificationLib.Verifications storage pointer"
+                                }
+                              },
+                              "id": 51977,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberLocation": "1331:7:68",
+                              "memberName": "indexOf",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 51883,
+                              "src": "1327:11:68",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                                "typeString": "mapping(address => uint256)"
+                              }
+                            },
+                            "id": 51978,
+                            "indexExpression": {
+                              "id": 51976,
+                              "name": "key",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 51939,
+                              "src": "1339:3:68",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "nodeType": "IndexAccess",
+                            "src": "1327:16:68",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "expression": {
+                              "expression": {
+                                "id": 51979,
+                                "name": "map",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 51937,
+                                "src": "1346:3:68",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                                  "typeString": "struct VerificationLib.Verifications storage pointer"
+                                }
+                              },
+                              "id": 51980,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberLocation": "1350:4:68",
+                              "memberName": "keys",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 51874,
+                              "src": "1346:8:68",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                                "typeString": "address[] storage ref"
+                              }
+                            },
+                            "id": 51981,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "1355:6:68",
+                            "memberName": "length",
+                            "nodeType": "MemberAccess",
+                            "src": "1346:15:68",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "1327:34:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 51983,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1327:34:68"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "id": 51989,
+                              "name": "key",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 51939,
+                              "src": "1389:3:68",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "expression": {
+                              "expression": {
+                                "id": 51984,
+                                "name": "map",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 51937,
+                                "src": "1375:3:68",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                                  "typeString": "struct VerificationLib.Verifications storage pointer"
+                                }
+                              },
+                              "id": 51987,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberLocation": "1379:4:68",
+                              "memberName": "keys",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 51874,
+                              "src": "1375:8:68",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                                "typeString": "address[] storage ref"
+                              }
+                            },
+                            "id": 51988,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "1384:4:68",
+                            "memberName": "push",
+                            "nodeType": "MemberAccess",
+                            "src": "1375:13:68",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$attached_to$_t_array$_t_address_$dyn_storage_ptr_$",
+                              "typeString": "function (address[] storage pointer,address)"
+                            }
+                          },
+                          "id": 51990,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1375:18:68",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 51991,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1375:18:68"
+                      }
+                    ]
+                  },
+                  "id": 51993,
+                  "nodeType": "IfStatement",
+                  "src": "1165:239:68",
+                  "trueBody": {
+                    "id": 51957,
+                    "nodeType": "Block",
+                    "src": "1188:46:68",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 51955,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "baseExpression": {
+                              "expression": {
+                                "id": 51949,
+                                "name": "map",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 51937,
+                                "src": "1202:3:68",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                                  "typeString": "struct VerificationLib.Verifications storage pointer"
+                                }
+                              },
+                              "id": 51952,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberLocation": "1206:6:68",
+                              "memberName": "values",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 51879,
+                              "src": "1202:10:68",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Verification_$51862_storage_$",
+                                "typeString": "mapping(address => struct DataTypes.Verification storage ref)"
+                              }
+                            },
+                            "id": 51953,
+                            "indexExpression": {
+                              "id": 51951,
+                              "name": "key",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 51939,
+                              "src": "1213:3:68",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "nodeType": "IndexAccess",
+                            "src": "1202:15:68",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Verification_$51862_storage",
+                              "typeString": "struct DataTypes.Verification storage ref"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "id": 51954,
+                            "name": "val",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 51942,
+                            "src": "1220:3:68",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Verification_$51862_memory_ptr",
+                              "typeString": "struct DataTypes.Verification memory"
+                            }
+                          },
+                          "src": "1202:21:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Verification_$51862_storage",
+                            "typeString": "struct DataTypes.Verification storage ref"
+                          }
+                        },
+                        "id": 51956,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1202:21:68"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "functionSelector": "ff7d076c",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "set",
+            "nameLocation": "1069:3:68",
+            "parameters": {
+              "id": 51943,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51937,
+                  "mutability": "mutable",
+                  "name": "map",
+                  "nameLocation": "1095:3:68",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51995,
+                  "src": "1073:25:68",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                    "typeString": "struct VerificationLib.Verifications"
+                  },
+                  "typeName": {
+                    "id": 51936,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 51935,
+                      "name": "Verifications",
+                      "nameLocations": [
+                        "1073:13:68"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 51888,
+                      "src": "1073:13:68"
+                    },
+                    "referencedDeclaration": 51888,
+                    "src": "1073:13:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                      "typeString": "struct VerificationLib.Verifications"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 51939,
+                  "mutability": "mutable",
+                  "name": "key",
+                  "nameLocation": "1108:3:68",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51995,
+                  "src": "1100:11:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 51938,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1100:7:68",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 51942,
+                  "mutability": "mutable",
+                  "name": "val",
+                  "nameLocation": "1143:3:68",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51995,
+                  "src": "1113:33:68",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Verification_$51862_memory_ptr",
+                    "typeString": "struct DataTypes.Verification"
+                  },
+                  "typeName": {
+                    "id": 51941,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 51940,
+                      "name": "DataTypes.Verification",
+                      "nameLocations": [
+                        "1113:9:68",
+                        "1123:12:68"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 51862,
+                      "src": "1113:22:68"
+                    },
+                    "referencedDeclaration": 51862,
+                    "src": "1113:22:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verification_$51862_storage_ptr",
+                      "typeString": "struct DataTypes.Verification"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1072:75:68"
+            },
+            "returnParameters": {
+              "id": 51944,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1155:0:68"
+            },
+            "scope": 52072,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 52071,
+            "nodeType": "FunctionDefinition",
+            "src": "1416:433:68",
+            "nodes": [],
+            "body": {
+              "id": 52070,
+              "nodeType": "Block",
+              "src": "1479:370:68",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "id": 52007,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "!",
+                    "prefix": true,
+                    "src": "1493:18:68",
+                    "subExpression": {
+                      "baseExpression": {
+                        "expression": {
+                          "id": 52003,
+                          "name": "map",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 51998,
+                          "src": "1494:3:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                            "typeString": "struct VerificationLib.Verifications storage pointer"
+                          }
+                        },
+                        "id": 52004,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1498:8:68",
+                        "memberName": "inserted",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 51887,
+                        "src": "1494:12:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 52006,
+                      "indexExpression": {
+                        "id": 52005,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 52000,
+                        "src": "1507:3:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "1494:17:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 52010,
+                  "nodeType": "IfStatement",
+                  "src": "1489:55:68",
+                  "trueBody": {
+                    "id": 52009,
+                    "nodeType": "Block",
+                    "src": "1513:31:68",
+                    "statements": [
+                      {
+                        "functionReturnParameters": 52002,
+                        "id": 52008,
+                        "nodeType": "Return",
+                        "src": "1527:7:68"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "id": 52015,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "delete",
+                    "prefix": true,
+                    "src": "1554:24:68",
+                    "subExpression": {
+                      "baseExpression": {
+                        "expression": {
+                          "id": 52011,
+                          "name": "map",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 51998,
+                          "src": "1561:3:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                            "typeString": "struct VerificationLib.Verifications storage pointer"
+                          }
+                        },
+                        "id": 52012,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1565:8:68",
+                        "memberName": "inserted",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 51887,
+                        "src": "1561:12:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 52014,
+                      "indexExpression": {
+                        "id": 52013,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 52000,
+                        "src": "1574:3:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1561:17:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 52016,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1554:24:68"
+                },
+                {
+                  "expression": {
+                    "id": 52021,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "delete",
+                    "prefix": true,
+                    "src": "1588:22:68",
+                    "subExpression": {
+                      "baseExpression": {
+                        "expression": {
+                          "id": 52017,
+                          "name": "map",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 51998,
+                          "src": "1595:3:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                            "typeString": "struct VerificationLib.Verifications storage pointer"
+                          }
+                        },
+                        "id": 52018,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1599:6:68",
+                        "memberName": "values",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 51879,
+                        "src": "1595:10:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Verification_$51862_storage_$",
+                          "typeString": "mapping(address => struct DataTypes.Verification storage ref)"
+                        }
+                      },
+                      "id": 52020,
+                      "indexExpression": {
+                        "id": 52019,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 52000,
+                        "src": "1606:3:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1595:15:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Verification_$51862_storage",
+                        "typeString": "struct DataTypes.Verification storage ref"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 52022,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1588:22:68"
+                },
+                {
+                  "assignments": [
+                    52024
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 52024,
+                      "mutability": "mutable",
+                      "name": "index",
+                      "nameLocation": "1629:5:68",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 52070,
+                      "src": "1621:13:68",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 52023,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1621:7:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 52029,
+                  "initialValue": {
+                    "baseExpression": {
+                      "expression": {
+                        "id": 52025,
+                        "name": "map",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51998,
+                        "src": "1637:3:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                          "typeString": "struct VerificationLib.Verifications storage pointer"
+                        }
+                      },
+                      "id": 52026,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1641:7:68",
+                      "memberName": "indexOf",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51883,
+                      "src": "1637:11:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                        "typeString": "mapping(address => uint256)"
+                      }
+                    },
+                    "id": 52028,
+                    "indexExpression": {
+                      "id": 52027,
+                      "name": "key",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52000,
+                      "src": "1649:3:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1637:16:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1621:32:68"
+                },
+                {
+                  "assignments": [
+                    52031
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 52031,
+                      "mutability": "mutable",
+                      "name": "lastKey",
+                      "nameLocation": "1671:7:68",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 52070,
+                      "src": "1663:15:68",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 52030,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1663:7:68",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 52040,
+                  "initialValue": {
+                    "baseExpression": {
+                      "expression": {
+                        "id": 52032,
+                        "name": "map",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51998,
+                        "src": "1681:3:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                          "typeString": "struct VerificationLib.Verifications storage pointer"
+                        }
+                      },
+                      "id": 52033,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1685:4:68",
+                      "memberName": "keys",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51874,
+                      "src": "1681:8:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                        "typeString": "address[] storage ref"
+                      }
+                    },
+                    "id": 52039,
+                    "indexExpression": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 52038,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "expression": {
+                          "expression": {
+                            "id": 52034,
+                            "name": "map",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 51998,
+                            "src": "1690:3:68",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                              "typeString": "struct VerificationLib.Verifications storage pointer"
+                            }
+                          },
+                          "id": 52035,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "1694:4:68",
+                          "memberName": "keys",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 51874,
+                          "src": "1690:8:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                            "typeString": "address[] storage ref"
+                          }
+                        },
+                        "id": 52036,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1699:6:68",
+                        "memberName": "length",
+                        "nodeType": "MemberAccess",
+                        "src": "1690:15:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "-",
+                      "rightExpression": {
+                        "hexValue": "31",
+                        "id": 52037,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1708:1:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      },
+                      "src": "1690:19:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1681:29:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1663:47:68"
+                },
+                {
+                  "expression": {
+                    "id": 52047,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "expression": {
+                          "id": 52041,
+                          "name": "map",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 51998,
+                          "src": "1721:3:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                            "typeString": "struct VerificationLib.Verifications storage pointer"
+                          }
+                        },
+                        "id": 52044,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1725:7:68",
+                        "memberName": "indexOf",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 51883,
+                        "src": "1721:11:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                          "typeString": "mapping(address => uint256)"
+                        }
+                      },
+                      "id": 52045,
+                      "indexExpression": {
+                        "id": 52043,
+                        "name": "lastKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 52031,
+                        "src": "1733:7:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1721:20:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 52046,
+                      "name": "index",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52024,
+                      "src": "1744:5:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1721:28:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 52048,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1721:28:68"
+                },
+                {
+                  "expression": {
+                    "id": 52053,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "delete",
+                    "prefix": true,
+                    "src": "1759:23:68",
+                    "subExpression": {
+                      "baseExpression": {
+                        "expression": {
+                          "id": 52049,
+                          "name": "map",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 51998,
+                          "src": "1766:3:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                            "typeString": "struct VerificationLib.Verifications storage pointer"
+                          }
+                        },
+                        "id": 52050,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1770:7:68",
+                        "memberName": "indexOf",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 51883,
+                        "src": "1766:11:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                          "typeString": "mapping(address => uint256)"
+                        }
+                      },
+                      "id": 52052,
+                      "indexExpression": {
+                        "id": 52051,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 52000,
+                        "src": "1778:3:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1766:16:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 52054,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1759:23:68"
+                },
+                {
+                  "expression": {
+                    "id": 52061,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "expression": {
+                          "id": 52055,
+                          "name": "map",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 51998,
+                          "src": "1793:3:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                            "typeString": "struct VerificationLib.Verifications storage pointer"
+                          }
+                        },
+                        "id": 52058,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1797:4:68",
+                        "memberName": "keys",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 51874,
+                        "src": "1793:8:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                          "typeString": "address[] storage ref"
+                        }
+                      },
+                      "id": 52059,
+                      "indexExpression": {
+                        "id": 52057,
+                        "name": "index",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 52024,
+                        "src": "1802:5:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1793:15:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 52060,
+                      "name": "lastKey",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52031,
+                      "src": "1811:7:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1793:25:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 52062,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1793:25:68"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "expression": {
+                          "id": 52063,
+                          "name": "map",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 51998,
+                          "src": "1828:3:68",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                            "typeString": "struct VerificationLib.Verifications storage pointer"
+                          }
+                        },
+                        "id": 52066,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1832:4:68",
+                        "memberName": "keys",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 51874,
+                        "src": "1828:8:68",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                          "typeString": "address[] storage ref"
+                        }
+                      },
+                      "id": 52067,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1837:3:68",
+                      "memberName": "pop",
+                      "nodeType": "MemberAccess",
+                      "src": "1828:12:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypop_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$returns$__$attached_to$_t_array$_t_address_$dyn_storage_ptr_$",
+                        "typeString": "function (address[] storage pointer)"
+                      }
+                    },
+                    "id": 52068,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1828:14:68",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 52069,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1828:14:68"
+                }
+              ]
+            },
+            "functionSelector": "9609027f",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "remove",
+            "nameLocation": "1425:6:68",
+            "parameters": {
+              "id": 52001,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51998,
+                  "mutability": "mutable",
+                  "name": "map",
+                  "nameLocation": "1454:3:68",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52071,
+                  "src": "1432:25:68",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                    "typeString": "struct VerificationLib.Verifications"
+                  },
+                  "typeName": {
+                    "id": 51997,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 51996,
+                      "name": "Verifications",
+                      "nameLocations": [
+                        "1432:13:68"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 51888,
+                      "src": "1432:13:68"
+                    },
+                    "referencedDeclaration": 51888,
+                    "src": "1432:13:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verifications_$51888_storage_ptr",
+                      "typeString": "struct VerificationLib.Verifications"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 52000,
+                  "mutability": "mutable",
+                  "name": "key",
+                  "nameLocation": "1467:3:68",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52071,
+                  "src": "1459:11:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 51999,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1459:7:68",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1431:40:68"
+            },
+            "returnParameters": {
+              "id": 52002,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1479:0:68"
+            },
+            "scope": 52072,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "VerificationLib",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          52072
+        ],
+        "name": "VerificationLib",
+        "nameLocation": "312:15:68",
+        "scope": 52073,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 68
+}

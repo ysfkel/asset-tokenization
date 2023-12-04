@@ -1,0 +1,768 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_beacon",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "previousAdmin",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "AdminChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "beacon",
+          "type": "address"
+        }
+      ],
+      "name": "BeaconUpgraded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "Upgraded",
+      "type": "event"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [],
+      "name": "getBeacon",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getImplementation",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b506040516106be3803806106be83398101604081905261002f916103ef565b80604051806020016040528060008152506100528282600061005a60201b60201c565b50505061048b565b6100638361011b565b6040516001600160a01b038416907f1cf3b03a6cf19fa2baba4df148e9dcabedea7f8a5c07840e207e5c089be95d3e90600090a26000825111806100a45750805b1561011657610114836001600160a01b0316635c60da1b6040518163ffffffff1660e01b8152600401602060405180830381865afa1580156100ea573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061010e91906103ef565b8361029f565b505b505050565b6001600160a01b0381163b6101855760405162461bcd60e51b815260206004820152602560248201527f455243313936373a206e657720626561636f6e206973206e6f74206120636f6e6044820152641d1c9858dd60da1b60648201526084015b60405180910390fd5b6101f9816001600160a01b0316635c60da1b6040518163ffffffff1660e01b8152600401602060405180830381865afa1580156101c6573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101ea91906103ef565b6001600160a01b03163b151590565b61025e5760405162461bcd60e51b815260206004820152603060248201527f455243313936373a20626561636f6e20696d706c656d656e746174696f6e206960448201526f1cc81b9bdd08184818dbdb9d1c9858dd60821b606482015260840161017c565b7fa3f0ad74e5423aebfd80d3ef4346578335a9a72aeaee59ff6cb3582b35133d5080546001600160a01b0319166001600160a01b0392909216919091179055565b60606102c48383604051806060016040528060278152602001610697602791396102cb565b9392505050565b6060600080856001600160a01b0316856040516102e8919061043c565b600060405180830381855af49150503d8060008114610323576040519150601f19603f3d011682016040523d82523d6000602084013e610328565b606091505b50909250905061033a86838387610344565b9695505050505050565b606083156103b35782516000036103ac576001600160a01b0385163b6103ac5760405162461bcd60e51b815260206004820152601d60248201527f416464726573733a2063616c6c20746f206e6f6e2d636f6e7472616374000000604482015260640161017c565b50816103bd565b6103bd83836103c5565b949350505050565b8151156103d55781518083602001fd5b8060405162461bcd60e51b815260040161017c9190610458565b60006020828403121561040157600080fd5b81516001600160a01b03811681146102c457600080fd5b60005b8381101561043357818101518382015260200161041b565b50506000910152565b6000825161044e818460208701610418565b9190910192915050565b6020815260008251806020840152610477816040850160208701610418565b601f01601f19169190910160400192915050565b6101fd8061049a6000396000f3fe60806040526004361061002d5760003560e01c80632d6b3a6b14610044578063aaf10f42146100755761003c565b3661003c5761003a61008a565b005b61003a61008a565b34801561005057600080fd5b5061005961009c565b6040516001600160a01b03909116815260200160405180910390f35b34801561008157600080fd5b506100596100d9565b61009a6100956100df565b610173565b565b60006100d460006100d47fa3f0ad74e5423aebfd80d3ef4346578335a9a72aeaee59ff6cb3582b35133d50546001600160a01b031690565b905090565b60006100d45b60006101127fa3f0ad74e5423aebfd80d3ef4346578335a9a72aeaee59ff6cb3582b35133d50546001600160a01b031690565b6001600160a01b0316635c60da1b6040518163ffffffff1660e01b8152600401602060405180830381865afa15801561014f573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100d49190610197565b3660008037600080366000845af43d6000803e808015610192573d6000f35b3d6000fd5b6000602082840312156101a957600080fd5b81516001600160a01b03811681146101c057600080fd5b939250505056fea2646970667358221220cc354e5ca00d7ea93f15188fc96a4a3994a843022d6a54fe23b088daeb3056e964736f6c63430008130033416464726573733a206c6f772d6c6576656c2064656c65676174652063616c6c206661696c6564",
+    "sourceMap": "315:563:73:-:0;;;439:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;480:7;1060:116:46;;;;;;;;;;;;1125:44;1149:6;1157:4;1163:5;1125:23;;;:44;;:::i;:::-;1060:116;;439:56:73;315:563;;5728:313:44;5834:21;5845:9;5834:10;:21::i;:::-;5870:25;;-1:-1:-1;;;;;5870:25:44;;;;;;;;5923:1;5909:4;:11;:15;:28;;;;5928:9;5909:28;5905:130;;;5953:71;5990:9;-1:-1:-1;;;;;5982:33:44;;:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;6019:4;5953:28;:71::i;:::-;;5905:130;5728:313;;;:::o;5054:371::-;-1:-1:-1;;;;;1702:19:49;;;5111:79:44;;;;-1:-1:-1;;;5111:79:44;;511:2:85;5111:79:44;;;493:21:85;550:2;530:18;;;523:30;589:34;569:18;;;562:62;-1:-1:-1;;;640:18:85;;;633:35;685:19;;5111:79:44;;;;;;;;;5221:55;5248:9;-1:-1:-1;;;;;5240:33:44;;:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;1702:19:49;;:23;;;1412:320;5221:55:44;5200:150;;;;-1:-1:-1;;;5200:150:44;;917:2:85;5200:150:44;;;899:21:85;956:2;936:18;;;929:30;995:34;975:18;;;968:62;-1:-1:-1;;;1046:18:85;;;1039:46;1102:19;;5200:150:44;715:412:85;5200:150:44;4719:66;5360:58;;-1:-1:-1;;;;;;5360:58:44;-1:-1:-1;;;;;5360:58:44;;;;;;;;;;5054:371::o;6674:198:49:-;6757:12;6788:77;6809:6;6817:4;6788:77;;;;;;;;;;;;;;;;;:20;:77::i;:::-;6781:84;6674:198;-1:-1:-1;;;6674:198:49:o;7058:325::-;7199:12;7224;7238:23;7265:6;-1:-1:-1;;;;;7265:19:49;7285:4;7265:25;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;7223:67:49;;-1:-1:-1;7223:67:49;-1:-1:-1;7307:69:49;7334:6;7223:67;;7363:12;7307:26;:69::i;:::-;7300:76;7058:325;-1:-1:-1;;;;;;7058:325:49:o;7671:628::-;7851:12;7879:7;7875:418;;;7906:10;:17;7927:1;7906:22;7902:286;;-1:-1:-1;;;;;1702:19:49;;;8113:60;;;;-1:-1:-1;;;8113:60:49;;1881:2:85;8113:60:49;;;1863:21:85;1920:2;1900:18;;;1893:30;1959:31;1939:18;;;1932:59;2008:18;;8113:60:49;1679:353:85;8113:60:49;-1:-1:-1;8208:10:49;8201:17;;7875:418;8249:33;8257:10;8269:12;8249:7;:33::i;:::-;7671:628;;;;;;:::o;8821:540::-;8980:17;;:21;8976:379;;9208:10;9202:17;9264:15;9251:10;9247:2;9243:19;9236:44;8976:379;9331:12;9324:20;;-1:-1:-1;;;9324:20:49;;;;;;;;:::i;14:290:85:-;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:85;;214:42;;204:70;;270:1;267;260:12;1132:250;1217:1;1227:113;1241:6;1238:1;1235:13;1227:113;;;1317:11;;;1311:18;1298:11;;;1291:39;1263:2;1256:10;1227:113;;;-1:-1:-1;;1374:1:85;1356:16;;1349:27;1132:250::o;1387:287::-;1516:3;1554:6;1548:13;1570:66;1629:6;1624:3;1617:4;1609:6;1605:17;1570:66;:::i;:::-;1652:16;;;;;1387:287;-1:-1:-1;;1387:287:85:o;2037:396::-;2186:2;2175:9;2168:21;2149:4;2218:6;2212:13;2261:6;2256:2;2245:9;2241:18;2234:34;2277:79;2349:6;2344:2;2333:9;2329:18;2324:2;2316:6;2312:15;2277:79;:::i;:::-;2417:2;2396:15;-1:-1:-1;;2392:29:85;2377:45;;;;2424:2;2373:54;;2037:396;-1:-1:-1;;2037:396:85:o;:::-;315:563:73;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x60806040526004361061002d5760003560e01c80632d6b3a6b14610044578063aaf10f42146100755761003c565b3661003c5761003a61008a565b005b61003a61008a565b34801561005057600080fd5b5061005961009c565b6040516001600160a01b03909116815260200160405180910390f35b34801561008157600080fd5b506100596100d9565b61009a6100956100df565b610173565b565b60006100d460006100d47fa3f0ad74e5423aebfd80d3ef4346578335a9a72aeaee59ff6cb3582b35133d50546001600160a01b031690565b905090565b60006100d45b60006101127fa3f0ad74e5423aebfd80d3ef4346578335a9a72aeaee59ff6cb3582b35133d50546001600160a01b031690565b6001600160a01b0316635c60da1b6040518163ffffffff1660e01b8152600401602060405180830381865afa15801561014f573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100d49190610197565b3660008037600080366000845af43d6000803e808015610192573d6000f35b3d6000fd5b6000602082840312156101a957600080fd5b81516001600160a01b03811681146101c057600080fd5b939250505056fea2646970667358221220cc354e5ca00d7ea93f15188fc96a4a3994a843022d6a54fe23b088daeb3056e964736f6c63430008130033",
+    "sourceMap": "315:563:73:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;2898:11:45;:9;:11::i;:::-;315:563:73;;2675:11:45;:9;:11::i;790:86:73:-;;;;;;;;;;;;;:::i;:::-;;;-1:-1:-1;;;;;178:32:85;;;160:51;;148:2;133:18;790:86:73;;;;;;;608:102;;;;;;;;;;;;;:::i;2322:110:45:-;2397:28;2407:17;:15;:17::i;:::-;2397:9;:28::i;:::-;2322:110::o;790:86:73:-;834:7;860:9;1296:7:46;1322:12;4719:66:44;4919:46;-1:-1:-1;;;;;4919:46:44;;4848:124;860:9:73;853:16;;790:86;:::o;608:102::-;660:7;686:17;1444:138:46;1511:7;1545:12;4719:66:44;4919:46;-1:-1:-1;;;;;4919:46:44;;4848:124;1545:12:46;-1:-1:-1;;;;;1537:36:46;;:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;948:895:45:-;1286:14;1283:1;1280;1267:34;1500:1;1497;1481:14;1478:1;1462:14;1455:5;1442:60;1576:16;1573:1;1570;1555:38;1614:6;1681:66;;;;1796:16;1793:1;1786:27;1681:66;1716:16;1713:1;1706:27;222:290:85;292:6;345:2;333:9;324:7;320:23;316:32;313:52;;;361:1;358;351:12;313:52;387:16;;-1:-1:-1;;;;;432:31:85;;422:42;;412:70;;478:1;475;468:12;412:70;501:5;222:290;-1:-1:-1;;;222:290:85:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getBeacon()": "2d6b3a6b",
+    "getImplementation()": "aaf10f42"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_beacon\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"previousAdmin\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newAdmin\",\"type\":\"address\"}],\"name\":\"AdminChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"beacon\",\"type\":\"address\"}],\"name\":\"BeaconUpgraded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"}],\"name\":\"Upgraded\",\"type\":\"event\"},{\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"inputs\":[],\"name\":\"getBeacon\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getImplementation\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"author\":\"Yusuf\",\"events\":{\"AdminChanged(address,address)\":{\"details\":\"Emitted when the admin account has changed.\"},\"BeaconUpgraded(address)\":{\"details\":\"Emitted when the beacon is changed.\"},\"Upgraded(address)\":{\"details\":\"Emitted when the implementation is upgraded.\"}},\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"_beacon\":\"Address of deployed Payrol beacon contract\"}}},\"title\":\"PayrollProxy\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getBeacon()\":{\"notice\":\"returns the address of the beacon contract\"},\"getImplementation()\":{\"notice\":\"returns the address of the Payrol implementation contract used by the proxy\"}},\"notice\":\"Proxy for Payroll contract\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/payroll/PayrollProxy.sol\":\"PayrollProxy\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/\"]},\"sources\":{\"lib/openzeppelin-contracts/contracts/interfaces/IERC1967.sol\":{\"keccak256\":\"0x3cbef5ebc24b415252e2f8c0c9254555d30d9f085603b4b80d9b5ed20ab87e90\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e8fa670c3bdce78e642cc6ae11c4cb38b133499cdce5e1990a9979d424703263\",\"dweb:/ipfs/QmVxeCUk4jL2pXQyhsoNJwyU874wRufS2WvGe8TgPKPqhE\"]},\"lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol\":{\"keccak256\":\"0x1d4afe6cb24200cc4545eed814ecf5847277dfe5d613a1707aad5fceecebcfff\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://383fb7b8181016ac5ccf07bc9cdb7c1b5045ea36e2cc4df52bcbf20396fc7688\",\"dweb:/ipfs/QmYJ7Cg4WmE3rR8KGQxjUCXFfTH6TcwZ2Z1f6tPrq7jHFr\"]},\"lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Upgrade.sol\":{\"keccak256\":\"0x3b21ae06bf5957f73fa16754b0669c77b7abd8ba6c072d35c3281d446fdb86c2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2db8e18505e86e02526847005d7287a33e397ed7fb9eaba3fd4a4a197add16e2\",\"dweb:/ipfs/QmW9BSuKTzHWHBNSHF4L8XfVuU1uJrP2vLg84YtBd8mL82\"]},\"lib/openzeppelin-contracts/contracts/proxy/Proxy.sol\":{\"keccak256\":\"0xc130fe33f1b2132158531a87734153293f6d07bc263ff4ac90e85da9c82c0e27\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8831721b6f4cc26534d190f9f1631c3f59c9ff38efdd911f85e0882b8e360472\",\"dweb:/ipfs/QmQZnLErZNStirSQ13ZNWQgvEYUtGE5tXYwn4QUPaVUfPN\"]},\"lib/openzeppelin-contracts/contracts/proxy/beacon/BeaconProxy.sol\":{\"keccak256\":\"0x85439e74ab467b6a23d45d32bdc9506cbc3760320289afd605f11638c4138e95\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e18633c182e445895e5a70f9e79f2558d0f6eac86767fd1d90552177df2955c\",\"dweb:/ipfs/QmagUFUJbiNGRGGajg9CF5LPuopc44XSCtcCaYvQasBuX9\"]},\"lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol\":{\"keccak256\":\"0xd50a3421ac379ccb1be435fa646d66a65c986b4924f0849839f08692f39dde61\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ada1e030c0231db8d143b44ce92b4d1158eedb087880cad6d8cc7bd7ebe7b354\",\"dweb:/ipfs/QmWZ2NHZweRpz1U9GF6R1h65ri76dnX7fNxLBeM2t5N5Ce\"]},\"lib/openzeppelin-contracts/contracts/utils/Address.sol\":{\"keccak256\":\"0x006dd67219697fe68d7fbfdea512e7c4cb64a43565ed86171d67e844982da6fa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2455248c8ddd9cc6a7af76a13973cddf222072427e7b0e2a7d1aff345145e931\",\"dweb:/ipfs/QmfYjnjRbWqYpuxurqveE6HtzsY1Xx323J428AKQgtBJZm\"]},\"lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol\":{\"keccak256\":\"0xf09e68aa0dc6722a25bc46490e8d48ed864466d17313b8a0b254c36b54e49899\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e26daf81e2252dc1fe1ce0e4b55c2eb7c6d1ee84ae6558d1a9554432ea1d32da\",\"dweb:/ipfs/Qmb1UANWiWq5pCKbmHSu772hd4nt374dVaghGmwSVNuk8Q\"]},\"src/payroll/PayrollProxy.sol\":{\"keccak256\":\"0x168d19e8e1667137a21c2a2c2c02bd48b9f4f7a6fa36d0b82a023baaabeb4099\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://0dc7b90c599d1e5c8ad66f4a566173cb9976cf76ba80aa478effce660c8d25df\",\"dweb:/ipfs/QmSG4h7Bruk2kBMFJ4TLufdozakhw1ALTXYD9dCVz5bi5Q\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_beacon",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousAdmin",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "newAdmin",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "AdminChanged",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "beacon",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "BeaconUpgraded",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "implementation",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "Upgraded",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "fallback"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getBeacon",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getImplementation",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "receive"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "constructor": {
+            "params": {
+              "_beacon": "Address of deployed Payrol beacon contract"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "getBeacon()": {
+            "notice": "returns the address of the beacon contract"
+          },
+          "getImplementation()": {
+            "notice": "returns the address of the Payrol implementation contract used by the proxy"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/payroll/PayrollProxy.sol": "PayrollProxy"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/openzeppelin-contracts/contracts/interfaces/IERC1967.sol": {
+        "keccak256": "0x3cbef5ebc24b415252e2f8c0c9254555d30d9f085603b4b80d9b5ed20ab87e90",
+        "urls": [
+          "bzz-raw://e8fa670c3bdce78e642cc6ae11c4cb38b133499cdce5e1990a9979d424703263",
+          "dweb:/ipfs/QmVxeCUk4jL2pXQyhsoNJwyU874wRufS2WvGe8TgPKPqhE"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol": {
+        "keccak256": "0x1d4afe6cb24200cc4545eed814ecf5847277dfe5d613a1707aad5fceecebcfff",
+        "urls": [
+          "bzz-raw://383fb7b8181016ac5ccf07bc9cdb7c1b5045ea36e2cc4df52bcbf20396fc7688",
+          "dweb:/ipfs/QmYJ7Cg4WmE3rR8KGQxjUCXFfTH6TcwZ2Z1f6tPrq7jHFr"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Upgrade.sol": {
+        "keccak256": "0x3b21ae06bf5957f73fa16754b0669c77b7abd8ba6c072d35c3281d446fdb86c2",
+        "urls": [
+          "bzz-raw://2db8e18505e86e02526847005d7287a33e397ed7fb9eaba3fd4a4a197add16e2",
+          "dweb:/ipfs/QmW9BSuKTzHWHBNSHF4L8XfVuU1uJrP2vLg84YtBd8mL82"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/proxy/Proxy.sol": {
+        "keccak256": "0xc130fe33f1b2132158531a87734153293f6d07bc263ff4ac90e85da9c82c0e27",
+        "urls": [
+          "bzz-raw://8831721b6f4cc26534d190f9f1631c3f59c9ff38efdd911f85e0882b8e360472",
+          "dweb:/ipfs/QmQZnLErZNStirSQ13ZNWQgvEYUtGE5tXYwn4QUPaVUfPN"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/proxy/beacon/BeaconProxy.sol": {
+        "keccak256": "0x85439e74ab467b6a23d45d32bdc9506cbc3760320289afd605f11638c4138e95",
+        "urls": [
+          "bzz-raw://6e18633c182e445895e5a70f9e79f2558d0f6eac86767fd1d90552177df2955c",
+          "dweb:/ipfs/QmagUFUJbiNGRGGajg9CF5LPuopc44XSCtcCaYvQasBuX9"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol": {
+        "keccak256": "0xd50a3421ac379ccb1be435fa646d66a65c986b4924f0849839f08692f39dde61",
+        "urls": [
+          "bzz-raw://ada1e030c0231db8d143b44ce92b4d1158eedb087880cad6d8cc7bd7ebe7b354",
+          "dweb:/ipfs/QmWZ2NHZweRpz1U9GF6R1h65ri76dnX7fNxLBeM2t5N5Ce"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/Address.sol": {
+        "keccak256": "0x006dd67219697fe68d7fbfdea512e7c4cb64a43565ed86171d67e844982da6fa",
+        "urls": [
+          "bzz-raw://2455248c8ddd9cc6a7af76a13973cddf222072427e7b0e2a7d1aff345145e931",
+          "dweb:/ipfs/QmfYjnjRbWqYpuxurqveE6HtzsY1Xx323J428AKQgtBJZm"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol": {
+        "keccak256": "0xf09e68aa0dc6722a25bc46490e8d48ed864466d17313b8a0b254c36b54e49899",
+        "urls": [
+          "bzz-raw://e26daf81e2252dc1fe1ce0e4b55c2eb7c6d1ee84ae6558d1a9554432ea1d32da",
+          "dweb:/ipfs/Qmb1UANWiWq5pCKbmHSu772hd4nt374dVaghGmwSVNuk8Q"
+        ],
+        "license": "MIT"
+      },
+      "src/payroll/PayrollProxy.sol": {
+        "keccak256": "0x168d19e8e1667137a21c2a2c2c02bd48b9f4f7a6fa36d0b82a023baaabeb4099",
+        "urls": [
+          "bzz-raw://0dc7b90c599d1e5c8ad66f4a566173cb9976cf76ba80aa478effce660c8d25df",
+          "dweb:/ipfs/QmSG4h7Bruk2kBMFJ4TLufdozakhw1ALTXYD9dCVz5bi5Q"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/payroll/PayrollProxy.sol",
+    "id": 52600,
+    "exportedSymbols": {
+      "BeaconProxy": [
+        48333
+      ],
+      "PayrollProxy": [
+        52599
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "130:749:73",
+    "nodes": [
+      {
+        "id": 52562,
+        "nodeType": "PragmaDirective",
+        "src": "130:24:73",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 52564,
+        "nodeType": "ImportDirective",
+        "src": "156:71:73",
+        "nodes": [],
+        "absolutePath": "lib/openzeppelin-contracts/contracts/proxy/beacon/BeaconProxy.sol",
+        "file": "@openzeppelin/proxy/beacon/BeaconProxy.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 52600,
+        "sourceUnit": 48334,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 52563,
+              "name": "BeaconProxy",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 48333,
+              "src": "164:11:73",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 52599,
+        "nodeType": "ContractDefinition",
+        "src": "315:563:73",
+        "nodes": [
+          {
+            "id": 52578,
+            "nodeType": "FunctionDefinition",
+            "src": "439:56:73",
+            "nodes": [],
+            "body": {
+              "id": 52577,
+              "nodeType": "Block",
+              "src": "493:2:73",
+              "nodes": [],
+              "statements": []
+            },
+            "documentation": {
+              "id": 52568,
+              "nodeType": "StructuredDocumentation",
+              "src": "358:76:73",
+              "text": " @param _beacon Address of deployed Payrol beacon contract"
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 52573,
+                    "name": "_beacon",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 52570,
+                    "src": "480:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  {
+                    "hexValue": "",
+                    "id": 52574,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "489:2:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                      "typeString": "literal_string \"\""
+                    },
+                    "value": ""
+                  }
+                ],
+                "id": 52575,
+                "kind": "baseConstructorSpecifier",
+                "modifierName": {
+                  "id": 52572,
+                  "name": "BeaconProxy",
+                  "nameLocations": [
+                    "468:11:73"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 48333,
+                  "src": "468:11:73"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "468:24:73"
+              }
+            ],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 52571,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52570,
+                  "mutability": "mutable",
+                  "name": "_beacon",
+                  "nameLocation": "459:7:73",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52578,
+                  "src": "451:15:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 52569,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "451:7:73",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "450:17:73"
+            },
+            "returnParameters": {
+              "id": 52576,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "493:0:73"
+            },
+            "scope": 52599,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 52588,
+            "nodeType": "FunctionDefinition",
+            "src": "608:102:73",
+            "nodes": [],
+            "body": {
+              "id": 52587,
+              "nodeType": "Block",
+              "src": "669:41:73",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 52584,
+                      "name": "_implementation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        48317
+                      ],
+                      "referencedDeclaration": 48317,
+                      "src": "686:15:73",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
+                        "typeString": "function () view returns (address)"
+                      }
+                    },
+                    "id": 52585,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "686:17:73",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 52583,
+                  "id": 52586,
+                  "nodeType": "Return",
+                  "src": "679:24:73"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 52579,
+              "nodeType": "StructuredDocumentation",
+              "src": "501:102:73",
+              "text": " @notice returns the address of the Payrol implementation contract used by the proxy"
+            },
+            "functionSelector": "aaf10f42",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getImplementation",
+            "nameLocation": "617:17:73",
+            "parameters": {
+              "id": 52580,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "634:2:73"
+            },
+            "returnParameters": {
+              "id": 52583,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52582,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52588,
+                  "src": "660:7:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 52581,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "660:7:73",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "659:9:73"
+            },
+            "scope": 52599,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 52598,
+            "nodeType": "FunctionDefinition",
+            "src": "790:86:73",
+            "nodes": [],
+            "body": {
+              "id": 52597,
+              "nodeType": "Block",
+              "src": "843:33:73",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 52594,
+                      "name": "_beacon",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48302,
+                      "src": "860:7:73",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
+                        "typeString": "function () view returns (address)"
+                      }
+                    },
+                    "id": 52595,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "860:9:73",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 52593,
+                  "id": 52596,
+                  "nodeType": "Return",
+                  "src": "853:16:73"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 52589,
+              "nodeType": "StructuredDocumentation",
+              "src": "716:69:73",
+              "text": " @notice returns the address of the beacon contract"
+            },
+            "functionSelector": "2d6b3a6b",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBeacon",
+            "nameLocation": "799:9:73",
+            "parameters": {
+              "id": 52590,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "808:2:73"
+            },
+            "returnParameters": {
+              "id": 52593,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52592,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52598,
+                  "src": "834:7:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 52591,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "834:7:73",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "833:9:73"
+            },
+            "scope": 52599,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 52566,
+              "name": "BeaconProxy",
+              "nameLocations": [
+                "340:11:73"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 48333,
+              "src": "340:11:73"
+            },
+            "id": 52567,
+            "nodeType": "InheritanceSpecifier",
+            "src": "340:11:73"
+          }
+        ],
+        "canonicalName": "PayrollProxy",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 52565,
+          "nodeType": "StructuredDocumentation",
+          "src": "229:85:73",
+          "text": " @title PayrollProxy\n @author Yusuf\n @notice Proxy for Payroll contract"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          52599,
+          48333,
+          48215,
+          47864,
+          48267
+        ],
+        "name": "PayrollProxy",
+        "nameLocation": "324:12:73",
+        "scope": 52600,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 73
+}

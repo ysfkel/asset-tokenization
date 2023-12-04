@@ -1,0 +1,297 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/employee/libraries/types.sol",
+    "id": 47571,
+    "exportedSymbols": {
+      "AgeVerification": [
+        47552
+      ],
+      "EmployeeType": [
+        47570
+      ],
+      "Gender": [
+        47555
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "130:317:45",
+    "nodes": [
+      {
+        "id": 47548,
+        "nodeType": "PragmaDirective",
+        "src": "130:24:45",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 47552,
+        "nodeType": "EnumDefinition",
+        "src": "156:68:45",
+        "nodes": [],
+        "canonicalName": "AgeVerification",
+        "members": [
+          {
+            "id": 47549,
+            "name": "Unverified",
+            "nameLocation": "183:10:45",
+            "nodeType": "EnumValue",
+            "src": "183:10:45"
+          },
+          {
+            "id": 47550,
+            "name": "UnderAged",
+            "nameLocation": "199:9:45",
+            "nodeType": "EnumValue",
+            "src": "199:9:45"
+          },
+          {
+            "id": 47551,
+            "name": "Approved",
+            "nameLocation": "214:8:45",
+            "nodeType": "EnumValue",
+            "src": "214:8:45"
+          }
+        ],
+        "name": "AgeVerification",
+        "nameLocation": "161:15:45"
+      },
+      {
+        "id": 47555,
+        "nodeType": "EnumDefinition",
+        "src": "226:36:45",
+        "nodes": [],
+        "canonicalName": "Gender",
+        "members": [
+          {
+            "id": 47553,
+            "name": "Male",
+            "nameLocation": "244:4:45",
+            "nodeType": "EnumValue",
+            "src": "244:4:45"
+          },
+          {
+            "id": 47554,
+            "name": "Female",
+            "nameLocation": "254:6:45",
+            "nodeType": "EnumValue",
+            "src": "254:6:45"
+          }
+        ],
+        "name": "Gender",
+        "nameLocation": "231:6:45"
+      },
+      {
+        "id": 47570,
+        "nodeType": "StructDefinition",
+        "src": "280:166:45",
+        "nodes": [],
+        "canonicalName": "EmployeeType",
+        "members": [
+          {
+            "constant": false,
+            "id": 47557,
+            "mutability": "mutable",
+            "name": "account",
+            "nameLocation": "314:7:45",
+            "nodeType": "VariableDeclaration",
+            "scope": 47570,
+            "src": "306:15:45",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 47556,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "306:7:45",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 47559,
+            "mutability": "mutable",
+            "name": "employeeId",
+            "nameLocation": "335:10:45",
+            "nodeType": "VariableDeclaration",
+            "scope": 47570,
+            "src": "327:18:45",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 47558,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "327:7:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 47561,
+            "mutability": "mutable",
+            "name": "dateOfBirth",
+            "nameLocation": "359:11:45",
+            "nodeType": "VariableDeclaration",
+            "scope": 47570,
+            "src": "351:19:45",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 47560,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "351:7:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 47564,
+            "mutability": "mutable",
+            "name": "gender",
+            "nameLocation": "383:6:45",
+            "nodeType": "VariableDeclaration",
+            "scope": 47570,
+            "src": "376:13:45",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_Gender_$47555",
+              "typeString": "enum Gender"
+            },
+            "typeName": {
+              "id": 47563,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 47562,
+                "name": "Gender",
+                "nameLocations": [
+                  "376:6:45"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 47555,
+                "src": "376:6:45"
+              },
+              "referencedDeclaration": 47555,
+              "src": "376:6:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_Gender_$47555",
+                "typeString": "enum Gender"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 47566,
+            "mutability": "mutable",
+            "name": "active",
+            "nameLocation": "400:6:45",
+            "nodeType": "VariableDeclaration",
+            "scope": 47570,
+            "src": "395:11:45",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 47565,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "395:4:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 47569,
+            "mutability": "mutable",
+            "name": "ageVerification",
+            "nameLocation": "428:15:45",
+            "nodeType": "VariableDeclaration",
+            "scope": 47570,
+            "src": "412:31:45",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_AgeVerification_$47552",
+              "typeString": "enum AgeVerification"
+            },
+            "typeName": {
+              "id": 47568,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 47567,
+                "name": "AgeVerification",
+                "nameLocations": [
+                  "412:15:45"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 47552,
+                "src": "412:15:45"
+              },
+              "referencedDeclaration": 47552,
+              "src": "412:15:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_AgeVerification_$47552",
+                "typeString": "enum AgeVerification"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "EmployeeType",
+        "nameLocation": "287:12:45",
+        "scope": 47571,
+        "visibility": "public"
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 45
+}
